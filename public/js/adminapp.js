@@ -49568,7 +49568,9 @@ var app = new Vue({
     catId: '',
     catStatus: '',
     getSectionId: '',
-    getCategories: ''
+    getCategories: '',
+    proId: '',
+    proStatus: ''
   },
   methods: {
     key: function key(event) {
@@ -49661,6 +49663,25 @@ var app = new Vue({
         if (result.isConfirmed) {
           window.location.href = "/admin/delete-" + par2 + "/" + par1;
         }
+      });
+    },
+    changeProductStatus: function changeProductStatus(proId) {
+      var _this5 = this;
+
+      this.proStatus = document.getElementById('product-' + proId).innerText;
+      this.proId = proId;
+      axios.post('/admin/update-product-status', {
+        proId: this.proId,
+        proStatus: this.proStatus
+      }).then(function (response) {
+        if (response.data.proStatus == 0) {
+          document.getElementById('product-' + response.data.product_id).innerText = 'inactive';
+        } else {
+          document.getElementById('product-' + response.data.product_id).innerText = 'Active';
+        }
+      }, function (response) {
+        _this5.error = 1;
+        console.log('error');
       });
     }
   }

@@ -41,7 +41,9 @@ Route::prefix('/admin')->namespace('Admin')->group(function (){
         Route::get('delete-category-image/{id}','CategoryController@deleteCategoryImage');
         Route::get('delete-category/{id}','CategoryController@deleteCategory');
         //products
-
+        Route::get('products','ProductsController@products');
+        Route::post('update-product-status','ProductsController@updateProductStatus');
+        Route::get('delete-product/{id}','ProductsController@deleteProduct');
 
 
 

@@ -99,6 +99,7 @@
     $(function () {
         $("#sections").DataTable();
         $("#categories").DataTable();
+        $("#products").DataTable();
 
     });
 </script>

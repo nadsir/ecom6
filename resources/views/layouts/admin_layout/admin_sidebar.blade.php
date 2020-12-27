@@ -37,8 +37,6 @@
                     </p>
                 </a>
                 </li>
-
-
                 @if(Session::get('page')=="setting" || Session::get('page')=="update-admin-details")
                     <?php $active="active" ?>
                 @else
@@ -64,7 +62,6 @@
                                 <p>Update Admin Details</p>
                             </a>
                         </li>
-
                             @if(Session::get('page')=="setting" )
                                 <?php $active="active" ?>
                             @else
@@ -117,6 +114,17 @@
                                 <p>categories</p>
                             </a>
                         </li>
+                            @if(Session::get('page')=="products" )
+                                <?php $active="active" ?>
+                            @else
+                                <?php $active=""; ?>
+                            @endif
+                            <li class="nav-item">
+                                <a  href="{{url('admin/products')}}" class="nav-link {{$active}}">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>products</p>
+                                </a>
+                            </li>
                     </ul>
                 </li>
                 <!--endCatalog-->

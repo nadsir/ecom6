@@ -38,7 +38,9 @@ const app = new Vue({
         catId: '',
         catStatus: '',
         getSectionId:'',
-        getCategories:''
+        getCategories:'',
+        proId:'',
+        proStatus:''
     },
     methods: {
         key: function (event) {
@@ -125,7 +127,24 @@ const app = new Vue({
                     window.location.href="/admin/delete-"+par2+"/"+par1;
                 }
             })
-        }
+        },
+        changeProductStatus: function (proId) {
+            this.proStatus = document.getElementById('product-' + proId).innerText;
+            this.proId = proId;
+            axios.post('/admin/update-product-status', {proId: this.proId, proStatus: this.proStatus})
+                .then(response => {
+                        if (response.data.proStatus == 0) {
+                            document.getElementById('product-' + response.data.product_id).innerText = 'inactive';
+                        } else {
+                            document.getElementById('product-' + response.data.product_id).innerText = 'Active';
+                        }
+                    },
+                    response => {
+                        this.error = 1;
+                        console.log('error');
+                    });
+
+        },
     },
 
 });
