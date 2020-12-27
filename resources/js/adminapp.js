@@ -98,6 +98,7 @@ const app = new Vue({
         },
         onChangeSection: function () {
             this.getSectionId = document.getElementById('section_id').value;
+            alert(this.getSectionId);
             axios.post('/admin/append-categories-level', {getSectionId:this.getSectionId}).then(
                 response => {
                     $('#appendCategoriesLevel').html(response.data);

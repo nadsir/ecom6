@@ -49,5 +49,11 @@ $factory->define(App\Section::class, function (Faker $faker) {
     ];
 });
 
+$factory->define(App\Product::class, function (Faker $faker) {
+    return [
+        'name' => $faker->name,
+        'status' => $faker->numberBetween(1,3),
 
+    ];
+});
 

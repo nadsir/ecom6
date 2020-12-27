@@ -5,6 +5,7 @@ use App\Admin;
 use App\Section;
 use App\User;
 use App\Category;
+use App\Product;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -28,12 +29,25 @@ class DatabaseSeeder extends Seeder
             ['id'=>3,'name'=>'Kids','status'=>1],
         ];
         Section::insert($sectionRecord);*/
-        $categoryRecords=[
+/*        $categoryRecords=[
             ['id'=>1,'parent_id'=>0,'section_id'=>1,'category_name'=>'T-Shirts','category_image'=>'','category_discount'=>0,'description'=>'','url'=>'t-shirt',
                 'meta_title'=>'','meta_description'=>'','meta_keywords'=>'','status'=>1],
             ['id'=>2,'parent_id'=>1,'section_id'=>1,'category_name'=>'Casual T-Shirts','category_image'=>'','category_discount'=>0,'description'=>'','url'=>'Casual t-shirt',
                 'meta_title'=>'','meta_description'=>'','meta_keywords'=>'','status'=>1],
         ];
-        Category::insert($categoryRecords);
+        Category::insert($categoryRecords);*/
+        $productRecords=[
+            ['id'=>1,'category_id'=>4,'section_id'=>1,'product_name'=>'Blue Casual T-Shirt','product_code'=>'BT001','product_color'=>'Blue','product_price'=>'1500',
+                'product_discount'=>10,'product_weight'=>200,'product_video'=>'','main_image'=>'','description'=>'Test Product','wash_care'=>'','fabric'=>'',
+                'pattern'=>'','sleeve'=>'','fit'=>'','occassion'=>'','meta_title'=>'','meta_description'=>'','meta_keywords'=>'','is_featured'=>'No','status'=>1,
+
+                ],
+            ['id'=>2,'category_id'=>4,'section_id'=>1,'product_name'=>'Red Casual T-Shirt','product_code'=>'RT001','product_color'=>'Red','product_price'=>'2000',
+                'product_discount'=>10,'product_weight'=>200,'product_video'=>'','main_image'=>'','description'=>'Test Product','wash_care'=>'','fabric'=>'',
+                'pattern'=>'','sleeve'=>'','fit'=>'','occassion'=>'','meta_title'=>'','meta_description'=>'','meta_keywords'=>'','is_featured'=>'Yes','status'=>1,
+
+            ],
+        ];
+        Product::insert($productRecords);
     }
 }

@@ -49638,6 +49638,7 @@ var app = new Vue({
       var _this4 = this;
 
       this.getSectionId = document.getElementById('section_id').value;
+      alert(this.getSectionId);
       axios.post('/admin/append-categories-level', {
         getSectionId: this.getSectionId
       }).then(function (response) {
