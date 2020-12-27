@@ -45,6 +45,8 @@
                                         <th>Products name</th>
                                         <th>Products Code</th>
                                         <th>Products Color</th>
+                                        <th>Products Category</th>
+                                        <th>Products Section</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -58,6 +60,8 @@ product
                                             <td>{{$product->product_name}}</td>
                                             <td>{{$product->product_code}}</td>
                                             <td>{{$product->product_color}}</td>
+                                            <td>{{$product->category->category_name}}</td>
+                                            <td>{{$product->section->name}}</td>
                                             <td>
                                                 @if($product->status==1)
                                                     <a class="UpdateProductStatus" section_id="{{$product->status}}" href="javascript:void(0)" id="product-{{$product->id}}" v-on:click="changeProductStatus({{$product->id}})" >Active</a>
