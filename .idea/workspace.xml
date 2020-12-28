@@ -16,12 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 33&#10;create route and function in controller and blade file for add and editing products &#10;and make arrays for adding filter option in product controller &#10;in add edit product function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_26_121616_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_26_121616_create_products_table.php" afterDir="false" />
-    </list>
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 34&#10;add category and subcategories for adding product &#10;complete the add product page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +214,7 @@
       <workItem from="1608825064316" duration="20000" />
       <workItem from="1608984835627" duration="4217000" />
       <workItem from="1609049345203" duration="17021000" />
-      <workItem from="1609135533216" duration="7611000" />
+      <workItem from="1609135533216" duration="8648000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -245,7 +240,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۰۴" />
       <updated>1609072904192</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎۰۰۰۰۵" summary="lesson 34&#10;add category and subcategories for adding product &#10;complete the add product page">
+      <created>1609143615848</created>
+      <option name="number" value="LOCAL‎۰۰۰۰۵" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۰۵" />
+      <updated>1609143615848</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +282,8 @@
     <MESSAGE value="lesson 31&#10;add route for products&#10;create products view and sent data to view form contrller&#10;make Active and inactive button with ajax&#10;delete product form product panel with sweet alert &#10;add product to admin sidebar panel" />
     <MESSAGE value="lesson 32&#10;make relation between product with section and category with model&#10;use subquery for adding special column for reduce query data" />
     <MESSAGE value="lesson 33&#10;create route and function in controller and blade file for add and editing products &#10;and make arrays for adding filter option in product controller &#10;in add edit product function" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 33&#10;create route and function in controller and blade file for add and editing products &#10;and make arrays for adding filter option in product controller &#10;in add edit product function" />
+    <MESSAGE value="lesson 34&#10;add category and subcategories for adding product &#10;complete the add product page" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 34&#10;add category and subcategories for adding product &#10;complete the add product page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="256" key="#Notifications" timestamp="1608823008050">
@@ -332,10 +334,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1239" y="280" width="540" height="524" key="StructurePopup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609054666721" />
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1609072906344">
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1609143778345">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609072906344" />
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609143778345" />
     <state x="442" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729176729" />
     <state x="390" y="293" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608824329746" />
     <state x="567" y="324" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608823801768">
