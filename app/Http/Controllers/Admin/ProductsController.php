@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Product;
+use App\Section;
 use Illuminate\Http\Request;
 use Session;
 class ProductsController extends Controller
@@ -52,13 +53,17 @@ class ProductsController extends Controller
         }
         //Filter Arrays
         $fabricArray=array('Cotton','Polyester','wool');
-        $sleeveArray=array('Full Sleeve','Half Sleeve','Short Sleeve','slleveless');
+        $sleeveArray=array('Full Sleeve','Half Sleeve','Short Sleeve','sleeveless');
         $patternArray=array('Checked','Plain','Printed','Self','Solid');
         $fitArray=array('Regular','slim','wool');
-        $occassionArray=array('Casual','Formal');
+        $occasionArray=array('Casual','Formal');
+        //Sections with categories and sub categories
+        $categories=Section::with('categories')->get();
+        $categories=json_decode(json_encode($categories),true);
 
 
 
-        return view('admin.products.add_edit_products')->with(compact('title','fabricArray','sleeveArray','patternArray','fitArray','occassionArray'));
+
+        return view('admin.products.add_edit_products')->with(compact('title','fabricArray','sleeveArray','patternArray','fitArray','occasionArray','categories'));
     }
 }

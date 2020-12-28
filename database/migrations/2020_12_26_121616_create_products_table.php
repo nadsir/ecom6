@@ -31,7 +31,7 @@ class CreateProductsTable extends Migration
             $table->string('pattern');
             $table->string('sleeve');
             $table->string('fit');
-            $table->string('occassion');
+            $table->string('occasion');
             $table->string('meta_title');
             $table->string('meta_description');
             $table->string('meta_keywords');
