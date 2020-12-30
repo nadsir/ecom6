@@ -62,8 +62,11 @@ product
                                             <td>{{$product->product_code}}</td>
                                             <td>{{$product->product_color}}</td>
                                             <td>
-                                                @if(!empty($product->main_image))
+                                                <?php $product_image_path='images/admin_images/product_images/small/'.$product->main_image;?>
+                                                @if(!empty($product->main_image) && file_exists($product_image_path))
                                                 <img style="width: 100px" src="{{asset('images/admin_images/product_images/small/'.$product->main_image)}}" alt="">
+                                                @else
+                                                    <img style="width: 100px" src="{{asset('images/admin_images/product_images/small/no_image.png')}}" alt="">
                                                 @endif
                                             </td>
                                             <td>{{$product->category->category_name}}</td>

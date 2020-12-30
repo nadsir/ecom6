@@ -9,6 +9,8 @@ use App\Section;
 use Image;
 use Illuminate\Http\Request;
 use Session;
+use function PHPUnit\Framework\isEmpty;
+
 class ProductsController extends Controller
 {
     public function products()
@@ -176,6 +178,10 @@ class ProductsController extends Controller
             $product->product_discount=$data['product_discount'];
             $product->product_video=$data['product_video'];
             $product->product_weight=$data['product_weight'];
+            if (!isset($imageName)){
+                $product->main_image=$data['main_image'];
+            }
+
             $product->description=$data['description'];
             $product->wash_care=$data['wash_care'];
             $product->fabric=$data['fabric'];
