@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Http\Controllers\Controller;
 use App\Product;
 use App\Section;
@@ -47,10 +48,115 @@ class ProductsController extends Controller
     {
         if ($id=='')
         {
-            $title='Add Products';
+            $title='Add Product';
+            $product=new Product;
         }else{
             $title='Edit Products';
         }
+        if ($request->isMethod('post')){
+            $data=$request->all();
+            //product Validation
+            $role = [
+                'category_id'=>'required',
+                'product_name' => 'required|regex:/^[\pL\s\-]+$/u',
+                'product_code' => 'required|regex:/^[\w-]*$/',
+                'product_price'=>'required|numeric',
+                'product_color'=>'required|regex:/^[\pL\s\-]+$/u',
+
+            ];
+            $customMessage = [
+                'category_id.required' => 'Name is require',
+                'product_name.required' => 'Product Name is require',
+                'product_name.regex' => 'Valid Product name is require',
+                'product_code.required' => 'Product code is require',
+                'product_code.regex' => 'Valid Product code is require',
+                'product_price.required' => 'Product Price is require',
+                'product_price.numeric' => 'Valid Product Price is require',
+                'product_color.required' => 'Product Color is require',
+                'product_color.regex' => 'Valid Product Color is require',
+
+            ];
+            $this->validate($request, $role, $customMessage);
+            if (empty($data['is_featured'])){
+                $is_featured="No";
+            }else{
+                $is_featured="Yes";
+            }
+            if (empty($data['fabric'])){
+                $data['fabric']="";
+            }
+            if (empty($data['product_video'])){
+                $data['product_video']="";
+            }
+            if (empty($data['main_image'])){
+                $data['main_image']="";
+            }
+            if (empty($data['product_discount'])){
+                $data['product_discount']=10.3;
+            }
+            if (empty($data['product_weight'])){
+                $data['product_weight']=10.3;
+            }
+
+            if (empty($data['pattern'])){
+                $data['pattern']="";
+            }
+            if (empty($data['sleeve'])){
+                $data['sleeve']="";
+            }
+            if (empty($data['fit'])){
+                $data['fir']="";
+            }
+            if (empty($data['occasion'])){
+                $data['occasion']="";
+            }
+            if (empty($data['description'])){
+                $data['description']="";
+            }
+            if (empty($data['wash_care'])){
+                $data['wash_care']="";
+            }
+            if (empty($data['meta_title'])){
+                $data['meta_title']="";
+            }
+            if (empty($data['meta_description'])){
+                $data['meta_description']="";
+            }
+            if (empty($data['meta_keywords'])){
+                $data['meta_keywords']="";
+            }
+
+
+            //save Product details in product table
+            $categoryDetails=Category::find($data['category_id']);
+            $product->section_id=$categoryDetails['section_id'];
+            $product->category_id=$data['category_id'];
+            $product->product_name=$data['product_name'];
+            $product->product_code=$data['product_code'];
+            $product->product_color=$data['product_color'];
+            $product->product_price=$data['product_price'];
+            $product->product_discount=$data['product_discount'];
+            $product->product_video=$data['product_video'];
+            $product->main_image=$data['main_image'];
+            $product->product_weight=$data['product_weight'];
+            $product->description=$data['description'];
+            $product->wash_care=$data['wash_care'];
+            $product->fabric=$data['fabric'];
+            $product->pattern=$data['sleeve'];
+            $product->sleeve=$data['category_id'];
+            $product->fit=$data['fit'];
+            $product->occasion=$data['occasion'];
+            $product->meta_title=$data['meta_title'];
+            $product->meta_keywords=$data['meta_keywords'];
+            $product->meta_description=$data['meta_description'];
+            $product->status=1;
+            $product->is_featured=$is_featured;
+            $product->save();
+            session::flash('success_message','Product added successfully!');
+            return redirect('admin/products');
+        }
+
+
         //Filter Arrays
         $fabricArray=array('Cotton','Polyester','wool');
         $sleeveArray=array('Full Sleeve','Half Sleeve','Short Sleeve','sleeveless');

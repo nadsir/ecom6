@@ -45,6 +45,7 @@
                                         <th>Products name</th>
                                         <th>Products Code</th>
                                         <th>Products Color</th>
+                                        <th>Products Image</th>
                                         <th>Products Category</th>
                                         <th>Products Section</th>
                                         <th>Status</th>
@@ -60,6 +61,11 @@ product
                                             <td>{{$product->product_name}}</td>
                                             <td>{{$product->product_code}}</td>
                                             <td>{{$product->product_color}}</td>
+                                            <td>
+                                                @if(!empty($product->main_image))
+                                                <img style="width: 100px" src="{{asset('images/admin_images/product_images/small/'.$product->main_image)}}" alt="">
+                                                @endif
+                                            </td>
                                             <td>{{$product->category->category_name}}</td>
                                             <td>{{$product->section->name}}</td>
                                             <td>
