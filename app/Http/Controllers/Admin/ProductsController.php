@@ -6,6 +6,7 @@ use App\Category;
 use App\Http\Controllers\Controller;
 use App\Product;
 use App\Section;
+use Image;
 use Illuminate\Http\Request;
 use Session;
 class ProductsController extends Controller
@@ -125,6 +126,43 @@ class ProductsController extends Controller
             if (empty($data['meta_keywords'])){
                 $data['meta_keywords']="";
             }
+            //Upload Product Images
+            if ($request->hasFile('main_image')){
+                $image_tmp=$request->file('main_image');
+                if ($image_tmp->isValid()){
+                    //upload Image after Resize
+
+                    $image_name=pathinfo($image_tmp->getClientOriginalName(), PATHINFO_FILENAME);
+                    $extension=$image_tmp->getClientOriginalExtension();
+
+                    $imageName=$image_name.'-'.rand(111,99999).'.'.$extension;
+
+                    $large_image_path='images/admin_images/product_images/large/'.$imageName;
+                    $medium_image_path='images/admin_images/product_images/medium/'.$imageName;
+                    $small_image_path='images/admin_images/product_images/small/'.$imageName;
+                    Image::make($image_tmp)->save($large_image_path);
+                    Image::make($image_tmp)->resize(520,600)->save($medium_image_path);
+                    Image::make($image_tmp)->resize(260,300)->save($small_image_path);
+
+                    $product->main_image=$imageName;
+                }
+            }
+            //upload product video
+            if ($request->hasFile('product_video')){
+                $video_temp=$request->file('product_video');
+                if ($video_temp->isValid()){
+                    $video_name=pathinfo($video_temp->getClientOriginalName(), PATHINFO_FILENAME);
+                    $extension=$video_temp->getClientOriginalExtension();
+                    $videoName=$video_name.'-'.rand().'.'.$extension;
+                    $video_path='videos/product_videos/';
+                    $video_temp->move($video_path,$videoName);
+                    //save video in products table
+                    $product->product_video=$videoName;
+
+                }
+            }
+
+
 
 
             //save Product details in product table
@@ -137,7 +175,6 @@ class ProductsController extends Controller
             $product->product_price=$data['product_price'];
             $product->product_discount=$data['product_discount'];
             $product->product_video=$data['product_video'];
-            $product->main_image=$data['main_image'];
             $product->product_weight=$data['product_weight'];
             $product->description=$data['description'];
             $product->wash_care=$data['wash_care'];
