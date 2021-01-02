@@ -53,8 +53,15 @@ class ProductsController extends Controller
         {
             $title='Add Product';
             $product=new Product;
+            $productdata=array();
+            $message="Product added successfully";
         }else{
             $title='Edit Products';
+            $productdata=Product::find($id);
+            $productdata=json_decode(json_encode($productdata),true);
+            $product=Product::find($id);
+            $message="Product update successfully";
+
         }
         if ($request->isMethod('post')){
             $data=$request->all();
@@ -195,7 +202,7 @@ class ProductsController extends Controller
             $product->status=1;
             $product->is_featured=$is_featured;
             $product->save();
-            session::flash('success_message','Product added successfully!');
+            session::flash('success_message',$message);
             return redirect('admin/products');
         }
 
@@ -213,6 +220,6 @@ class ProductsController extends Controller
 
 
 
-        return view('admin.products.add_edit_products')->with(compact('title','fabricArray','sleeveArray','patternArray','fitArray','occasionArray','categories'));
+        return view('admin.products.add_edit_products')->with(compact('title','fabricArray','sleeveArray','patternArray','fitArray','occasionArray','categories','productdata'));
     }
 }
