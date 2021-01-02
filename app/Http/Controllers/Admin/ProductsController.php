@@ -154,6 +154,8 @@ class ProductsController extends Controller
                     Image::make($image_tmp)->resize(260,300)->save($small_image_path);
 
                     $product->main_image=$imageName;
+                }else{
+
                 }
             }
             //upload product video
@@ -162,7 +164,7 @@ class ProductsController extends Controller
                 if ($video_temp->isValid()){
                     $video_name=pathinfo($video_temp->getClientOriginalName(), PATHINFO_FILENAME);
                     $extension=$video_temp->getClientOriginalExtension();
-                    $videoName=$video_name.'-'.rand().'.'.$extension;
+                    $videoName=$video_name.'-'.rand(111,99999).'.'.$extension;
                     $video_path='videos/product_videos/';
                     $video_temp->move($video_path,$videoName);
                     //save video in products table
@@ -183,11 +185,10 @@ class ProductsController extends Controller
             $product->product_color=$data['product_color'];
             $product->product_price=$data['product_price'];
             $product->product_discount=$data['product_discount'];
-            $product->product_video=$data['product_video'];
+
             $product->product_weight=$data['product_weight'];
-            if (!isset($imageName)){
-                $product->main_image=$data['main_image'];
-            }
+
+
 
             $product->description=$data['description'];
             $product->wash_care=$data['wash_care'];
@@ -221,5 +222,39 @@ class ProductsController extends Controller
 
 
         return view('admin.products.add_edit_products')->with(compact('title','fabricArray','sleeveArray','patternArray','fitArray','occasionArray','categories','productdata'));
+    }
+    public function deleteProductImage($id){
+        //get product image
+        $productImage=Product::select('main_image')->where('id',$id)->first();
+        //get category image paths
+        $small_image_path='images/admin_images/product_images/small/';
+        $medium_image_path='images/admin_images/product_images/medium/';
+        $large_image_path='images/admin_images/product_images/large/';
+        //delete small product image from product_images folder if exist
+        if (file_exists($small_image_path.$productImage->main_image)){
+            unlink($small_image_path.$productImage->main_image);
+        }
+        if (file_exists($medium_image_path.$productImage->main_image)){
+            unlink($medium_image_path .$productImage->main_image);
+        }
+        if (file_exists($large_image_path.$productImage->main_image)){
+            unlink($large_image_path .$productImage->main_image);
+        }
+        //delete category image form categories table
+        Product::where('id',$id)->update(['main_image'=>'']);
+        return redirect()->back()->with('flash_message_success','Product image has been deleted successfully');
+    }
+    public function deleteProductVideo($id){
+        //get category image
+        $productImage=Product::select('product_video')->where('id',$id)->first();
+        //get category image path
+        $productVideo_image_path='videos/product_videos/';
+        //delete category image from category_images folder if exist
+        if (file_exists($productVideo_image_path.$productImage->product_video)){
+            unlink($productVideo_image_path.$productImage->product_video);
+        }
+        //delete category image form categories table
+        Product::where('id',$id)->update(['product_video'=>'']);
+        return redirect()->back()->with('flash_message_success','Product video has been deleted successfully');
     }
 }
