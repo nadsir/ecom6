@@ -257,4 +257,20 @@ class ProductsController extends Controller
         Product::where('id',$id)->update(['product_video'=>'']);
         return redirect()->back()->with('flash_message_success','Product video has been deleted successfully');
     }
+
+    public function addAttributes(Request $request,$id)
+    {
+        if ($request->isMethod('post')){
+            $data=$request->all();
+            dd($data);
+        }
+
+        $productdata=Product::find($id);
+        $productdata=json_decode(json_encode($productdata));
+        $title="Product Attributes";
+        return view('admin.products.add_attributes')->with(compact('productdata','title'));
+
+
+
+    }
 }

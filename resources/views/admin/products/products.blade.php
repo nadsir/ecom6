@@ -78,10 +78,12 @@ product
                                                     <a class="UpdateProductStatus" section_id="{{$product->status}}" href="javascript:void(0)" id="product-{{$product->id}}" v-on:click="changeProductStatus({{$product->id}})">Inactive</a>
                                                 @endif</td>
                                             <td>
-                                                <a href={{url('admin/add-edit-product/'.$product->id)}}>Edit</a>
+                                                <a title="Add Attributes" href={{url('admin/add-attributes/'.$product->id)}}><i class="fas fa-plus"></i></a>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <a  v-on:click="confirmDelete({{$product->id}},'product')" class="confirmDelete"
-                                                    name="product" href="javascript:void (0)" {{--href="{{url('admin/delete-product/'.$product->id)}}"--}}>Delete</a>
+                                                <a title="Edit Products" href={{url('admin/add-edit-product/'.$product->id)}}><i class="fas fa-edit"></i></a>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a title="Delete Products" v-on:click="confirmDelete({{$product->id}},'product')" class="confirmDelete"
+                                                    name="product" href="javascript:void (0)" {{--href="{{url('admin/delete-product/'.$product->id)}}"--}}><i class="fas fa-trash"></i></a>
                                             </td>
 
                                         </tr>
