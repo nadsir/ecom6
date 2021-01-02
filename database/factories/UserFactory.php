@@ -56,4 +56,7 @@ $factory->define(App\Product::class, function (Faker $faker) {
 
     ];
 });
+$factory->define('App\ProductAttribute',function (Faker $faker){
+
+});
 
