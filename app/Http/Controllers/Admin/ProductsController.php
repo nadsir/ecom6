@@ -255,7 +255,7 @@ class ProductsController extends Controller
             unlink($productVideo_image_path.$productImage->product_video);
         }
         //delete category image form categories table
-        Product::where('id',$id)->update(['product_video'=>'']);
+         Product::where('id',$id)->update(['product_video'=>'']);
         return redirect()->back()->with('flash_message_success','Product video has been deleted successfully');
     }
 
@@ -263,11 +263,11 @@ class ProductsController extends Controller
     {
         if ($request->isMethod('post')){
             $data=$request->all();
-
-            foreach ($data['sku'] as $key=>$value){
+            foreach ($data['sku'] as $key => $value){
                 if (!empty($value)){
                     //SKU already exists check
-                    $attrContSKU=ProductsAttribute::where('sku',$value)->count();
+
+                    $attrContSKU=ProductsAttribute::where(['product_id'=>$id,'sku'=>$data['sku'][$key]])->count();
                     if($attrContSKU>0){
                         $message='SKU already exists.please add another SKU';
                             session::flash('error-message',$message);
@@ -295,7 +295,7 @@ class ProductsController extends Controller
 
         }
 
-        $productdata=Product::find($id);
+        $productdata=Product::select('id','product_name','product_code','product_color','main_image')->with('attributes')->find($id);
         $productdata=json_decode(json_encode($productdata));
         $title="Product Attributes";
         return view('admin.products.add_attributes')->with(compact('productdata','title'));

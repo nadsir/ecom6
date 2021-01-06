@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use App\ProductsAttribute;
 class Product extends Model
 {
     public function category(){
@@ -11,6 +11,9 @@ class Product extends Model
     }
     public function section(){
         return $this->belongsTo('App\Section','section_id');
+    }
+    public function attributes(){
+        return $this->hasMany(ProductsAttribute::class);
     }
 
 }

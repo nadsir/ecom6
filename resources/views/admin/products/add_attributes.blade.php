@@ -29,7 +29,8 @@
                         </div>
                     @endif
                     @if(Session::has('flash_message_success'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 10px">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert"
+                             style="margin-top: 10px">
                             <strong>Congeradulation</strong>
                             <p>{{Session::get('flash_message_success')}}</p>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -37,17 +38,18 @@
                             </button>
                         </div>
                     @endif
-                        @if(Session::has('error-message'))
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 10px">
-                                <strong>Sorry</strong>
-                                <p>{{Session::get('error-message')}}</p>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        @endif
-                    <form name="attributeForm" id="attributeForm" method="post" action="{{ url('/admin/add-attributes/'.$productdata->id)}}">@csrf
-
+                    @if(Session::has('error-message'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert"
+                             style="margin-top: 10px">
+                            <strong>Sorry</strong>
+                            <p>{{Session::get('error-message')}}</p>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
+                    <form name="attributeForm" id="attributeForm" method="post"
+                          action="{{ url('/admin/add-attributes/'.$productdata->id)}}">@csrf
                         <div class="card-header">
                             <h3 class="card-title">{{$title}}</h3>
                             <div class="card-tools">
@@ -60,53 +62,84 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-
                                     <div class="form-group">
                                         <label for="product_name">product Name : {{$productdata->product_name}}</label>
                                     </div>
                                     <div class="form-group">
                                         <label for="product_code">product Code : {{$productdata->product_code}}</label>
-
                                     </div>
                                     <div class="form-group">
-                                        <label for="product_color">product color: {{$productdata->product_color}}</label>
-
+                                        <label for="product_color">product
+                                            color: {{$productdata->product_color}}</label>
                                     </div>
                                 </div>
-
                                 <div class="col-md-6">
-
                                     <div class="form-group">
 
                                         <div class="input-group">
-                                            <img style="width:120px;" src="{{asset('images/admin_images/product_images/small/'.$productdata->main_image)}}" alt="">
+                                            <img style="width:120px;"
+                                                 src="{{asset('images/admin_images/product_images/small/'.$productdata->main_image)}}"
+                                                 alt="">
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-
                                     <div class="form-group">
-
                                         <div class="field_wrapper">
                                             <div>
-                                                <input type="text" name="size[]" id="size" placeholder="Size" value="" style="width: 120px " required=""/>
-                                                <input type="text" name="sku[]" id="sku" placeholder="Sku" value="" style="width: 120px" required=""/>
-                                                <input type="number" name="price[]" id="price" placeholder="Price" value="" style="width: 120px" required=""/>
-                                                <input type="number" name="stock[]" id="stock" placeholder="Stock" value="" style="width: 120px" required=""/>
-                                                <a href="javascript:void(0);" class="add_button" title="Add field">Add</a>
+                                                <input type="text" name="size[]" id="size" placeholder="Size" value=""
+                                                       style="width: 120px " required=""/>
+                                                <input type="text" name="sku[]" id="sku" placeholder="Sku" value=""
+                                                       style="width: 120px" required=""/>
+                                                <input type="number" name="price[]" id="price" placeholder="Price"
+                                                       value="" style="width: 120px" required=""/>
+                                                <input type="number" name="stock[]" id="stock" placeholder="Stock"
+                                                       value="" style="width: 120px" required=""/>
+                                                <a href="javascript:void(0);" class="add_button"
+                                                   title="Add field">Add</a>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="card-footer">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Categories</h3>
+                        </div>
+                        <div class="card-body">
+                            <table id="productsAttr" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Size</th>
+                                    <th>SKU</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($productdata->attributes as $attribute)
+                                    <tr>
+                                        <td>{{$attribute->id}}</td>
+                                        <td>{{$attribute->size}}</td>
+                                        <td>{{$attribute->sku}}</td>
+                                        <td>{{$attribute->price}}</td>
+                                        <td>{{$attribute->stock}}</td>
+                                        <td></td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

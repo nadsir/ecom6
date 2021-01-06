@@ -16,9 +16,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue">
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 46&#10;adding attributes to table with adding session message for error and adding &#10;attributes for adding array to database we used the foreach loop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/products/add_attributes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/add_attributes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_layout.blade.php" afterDir="false" />
     </list>
@@ -224,7 +225,7 @@
       <workItem from="1609308271616" duration="18846000" />
       <workItem from="1609567562122" duration="21060000" />
       <workItem from="1609657317892" duration="968000" />
-      <workItem from="1609919643208" duration="5670000" />
+      <workItem from="1609919643208" duration="13723000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -310,7 +311,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۱۴" />
       <updated>1609593846982</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL‎۰۰۰۱۵" summary="lesson 46&#10;adding attributes to table with adding session message for error and adding &#10;attributes for adding array to database we used the foreach loop">
+      <created>1609928249288</created>
+      <option name="number" value="LOCAL‎۰۰۰۱۵" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۱۵" />
+      <updated>1609928249288</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +362,8 @@
     <MESSAGE value="lesson 42&#10;show image and video related to the product &#10;and delete by your order from folder and DB and show sweetalert for &#10;accept your delete action" />
     <MESSAGE value="lesson 43&#10;make product-attribute-table for differentiate between products that hvae&#10;different attribute same size price and stock and ...&#10;make migration and model and seeder for adding data" />
     <MESSAGE value="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue" />
+    <MESSAGE value="lesson 46&#10;adding attributes to table with adding session message for error and adding &#10;attributes for adding array to database we used the foreach loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 46&#10;adding attributes to table with adding session message for error and adding &#10;attributes for adding array to database we used the foreach loop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="256" key="#Notifications" timestamp="1608823008050">
@@ -406,10 +414,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1239" y="280" width="540" height="524" key="StructurePopup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609054666721" />
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1609593858195">
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1609929568624">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609593858195" />
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609929568624" />
     <state x="442" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729176729" />
     <state x="390" y="293" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608824329746" />
     <state x="-1828" y="92" width="1736" height="896" key="dock-window-1" timestamp="1609921828854">

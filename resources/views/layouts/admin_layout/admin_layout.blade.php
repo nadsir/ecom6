@@ -100,7 +100,7 @@
         $("#sections").DataTable();
         $("#categories").DataTable();
         $("#products").DataTable();
-
+        $("#productsAttr").DataTable();
     });
 </script>
 <script>
