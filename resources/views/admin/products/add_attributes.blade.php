@@ -37,7 +37,17 @@
                             </button>
                         </div>
                     @endif
+                        @if(Session::has('error-message'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 10px">
+                                <strong>Sorry</strong>
+                                <p>{{Session::get('error-message')}}</p>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        @endif
                     <form name="attributeForm" id="attributeForm" method="post" action="{{ url('/admin/add-attributes/'.$productdata->id)}}">@csrf
+
                         <div class="card-header">
                             <h3 class="card-title">{{$title}}</h3>
                             <div class="card-tools">
@@ -80,10 +90,10 @@
 
                                         <div class="field_wrapper">
                                             <div>
-                                                <input type="text" name="size[]" id="size" placeholder="Size" value="" style="width: 120px"/>
-                                                <input type="text" name="sku[]" id="sku" placeholder="Sku" value="" style="width: 120px"/>
-                                                <input type="text" name="price[]" id="price" placeholder="Price" value="" style="width: 120px"/>
-                                                <input type="text" name="stock[]" id="stock" placeholder="Stock" value="" style="width: 120px"/>
+                                                <input type="text" name="size[]" id="size" placeholder="Size" value="" style="width: 120px " required=""/>
+                                                <input type="text" name="sku[]" id="sku" placeholder="Sku" value="" style="width: 120px" required=""/>
+                                                <input type="number" name="price[]" id="price" placeholder="Price" value="" style="width: 120px" required=""/>
+                                                <input type="number" name="stock[]" id="stock" placeholder="Stock" value="" style="width: 120px" required=""/>
                                                 <a href="javascript:void(0);" class="add_button" title="Add field">Add</a>
                                             </div>
                                         </div>

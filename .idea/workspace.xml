@@ -16,13 +16,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 43&#10;make product-attribute-table for differentiate between products that hvae&#10;different attribute same size price and stock and ...&#10;make migration and model and seeder for adding data">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/add_attributes.blade.php" afterDir="false" />
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/add_attributes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/add_attributes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +222,9 @@
       <workItem from="1609049345203" duration="17021000" />
       <workItem from="1609135533216" duration="14741000" />
       <workItem from="1609308271616" duration="18846000" />
-      <workItem from="1609567562122" duration="20776000" />
+      <workItem from="1609567562122" duration="21060000" />
+      <workItem from="1609657317892" duration="968000" />
+      <workItem from="1609919643208" duration="5670000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -304,7 +304,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۱۳" />
       <updated>1609585674956</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL‎۰۰۰۱۴" summary="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue">
+      <created>1609593846982</created>
+      <option name="number" value="LOCAL‎۰۰۰۱۴" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۱۴" />
+      <updated>1609593846982</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +354,8 @@
     <MESSAGE value="lesson 41&#10;Update product content and image and update DB" />
     <MESSAGE value="lesson 42&#10;show image and video related to the product &#10;and delete by your order from folder and DB and show sweetalert for &#10;accept your delete action" />
     <MESSAGE value="lesson 43&#10;make product-attribute-table for differentiate between products that hvae&#10;different attribute same size price and stock and ...&#10;make migration and model and seeder for adding data" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 43&#10;make product-attribute-table for differentiate between products that hvae&#10;different attribute same size price and stock and ...&#10;make migration and model and seeder for adding data" />
+    <MESSAGE value="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="256" key="#Notifications" timestamp="1608823008050">
@@ -399,12 +406,16 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1239" y="280" width="540" height="524" key="StructurePopup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609054666721" />
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1609585704596">
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1609593858195">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609585704596" />
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609593858195" />
     <state x="442" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729176729" />
     <state x="390" y="293" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608824329746" />
+    <state x="-1828" y="92" width="1736" height="896" key="dock-window-1" timestamp="1609921828854">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1828" y="92" width="1736" height="896" key="dock-window-1/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609921828854" />
     <state x="567" y="324" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608823801768">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

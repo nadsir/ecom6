@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Category;
 use App\Http\Controllers\Controller;
 use App\Product;
+use App\ProductsAttribute;
 use App\Section;
 use Image;
 use Illuminate\Http\Request;
@@ -262,7 +263,36 @@ class ProductsController extends Controller
     {
         if ($request->isMethod('post')){
             $data=$request->all();
-            dd($data);
+
+            foreach ($data['sku'] as $key=>$value){
+                if (!empty($value)){
+                    //SKU already exists check
+                    $attrContSKU=ProductsAttribute::where('sku',$value)->count();
+                    if($attrContSKU>0){
+                        $message='SKU already exists.please add another SKU';
+                            session::flash('error-message',$message);
+                            return redirect()->back();
+                    }
+                    $attrContSize=ProductsAttribute::where(['product_id'=>$id,'size'=>$data['size'][$key]])->count();
+                    if($attrContSize>0){
+                        $message='size already exists.please add another Size';
+                        session::flash('error-message',$message);
+                        return redirect()->back();
+                    }
+                    $attribute=new ProductsAttribute;
+                    $attribute->product_id=$id;
+                    $attribute->sku=$value;
+                    $attribute->size=$data['size'][$key];
+                    $attribute->price=$data['price'][$key];
+                    $attribute->stock=$data['stock'][$key];
+                    $attribute->status=1;
+                    $attribute->save();
+                }
+            }
+            $success_message='Product Attributes has added successfully';
+            session::flash('flash_message_success',$success_message);
+            return redirect()->back();
+
         }
 
         $productdata=Product::find($id);

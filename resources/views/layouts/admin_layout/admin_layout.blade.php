@@ -113,10 +113,10 @@
         var wrapper = $('.field_wrapper'); //Input field wrapper
         var fieldHTML = '' +
             '<div style="margin-top: 10px;">' +
-            '<input type="text" name="size[]" style="width: 120px;" placeholder="Size"/>' +
-            '<input type="text" name="sku[]" style="width: 120px;margin-left: 4px" placeholder="Sku"/>  ' +
-            '<input type="text" name="price[]" style="width: 120px;margin-left: 1px" placeholder="Price"/>  ' +
-            '<input type="text" name="stock[]" style="width: 120px;margin-left: 1px"  placeholder="Stock"/>' +
+            '<input type="text" name="size[]" style="width: 120px;" placeholder="Size" required=""/>' +
+            '<input type="text" name="sku[]" style="width: 120px;margin-left: 4px" placeholder="Sku" required=""/>  ' +
+            '<input type="text" name="price[]" style="width: 120px;margin-left: 1px" placeholder="Price" required=""/>  ' +
+            '<input type="text" name="stock[]" style="width: 120px;margin-left: 1px"  placeholder="Stock" required=""/>' +
             '<a href="javascript:void(0);" class="remove_button">Delete</a>' +
             '</div>'; //New input field html
         var x = 1; //Initial field counter is 1
