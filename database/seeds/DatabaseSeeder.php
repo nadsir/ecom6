@@ -7,6 +7,7 @@ use App\User;
 use App\Category;
 use App\Product;
 use App\ProductsAttribute;
+use App\ProductsImage;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -50,11 +51,16 @@ class DatabaseSeeder extends Seeder
             ],
         ];
         Product::insert($productRecords);*/
-        $productAttributeRecords=[
+/*        $productAttributeRecords=[
             ['id'=>1,'product_id'=>10,'size'=>'small','price'=>1200,'stock'=>10,'sku'=>'GCT001-S','status'=>1],
             ['id'=>2,'product_id'=>10,'size'=>'small','price'=>1300,'stock'=>20,'sku'=>'GCT001-M','status'=>1],
             ['id'=>3,'product_id'=>10,'size'=>'small','price'=>1400,'stock'=>10,'sku'=>'GCT001-L','status'=>1],
         ];
-        ProductsAttribute::insert($productAttributeRecords);
+        ProductsAttribute::insert($productAttributeRecords);*/
+
+        $productImageRecords=[
+            ['id'=>1,'product_id'=>1,'image'=>'Noizy-Wood-black-tshirt-white-X-48332.jpg','status'=>1]
+        ];
+        ProductsImage::insert($productImageRecords);
     }
 }
