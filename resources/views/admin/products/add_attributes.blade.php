@@ -144,6 +144,15 @@
                                                        required="">
                                             </td>
                                             <td><input type="hidden" name="attrId[]" value="{{$attribute->id}}"></td>
+                                            <td>
+                                                @if($attribute->status==1)
+                                                    <a class="UpdateAttributeStatus" section_id="{{$attribute->status}}" href="javascript:void(0)" id="attribute-{{$attribute->id}}" v-on:click="changeAttributeStatus({{$attribute->id}})" >Active</a>
+                                                @else
+                                                    <a class="UpdateAttributeStatus" section_id="{{$attribute->status}}" href="javascript:void(0)" id="attribute-{{$attribute->id}}" v-on:click="changeAttributeStatus({{$attribute->id}})">Inactive</a>
+                                                @endif
+                                                    <a title="Delete Attribute" v-on:click="confirmDeleteProductStatus({{$attribute->id}},'attribute')" class="confirmDelete"
+                                                       name="attribute" href="javascript:void (0)" ><i class="fas fa-trash"></i></a>
+                                            </td>
                                         </tr>
                                     @endforeach
                                     </tbody>

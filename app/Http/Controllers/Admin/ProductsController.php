@@ -315,4 +315,25 @@ class ProductsController extends Controller
             return redirect()->back();
         }
     }
+
+    public function updateAttributeStatus(Request $request){
+
+        if ($request->ajax()) {
+            if ($request->attrStatus == "Active") {
+                $attrStatus = 0;
+            } else {
+                $attrStatus = 1;
+            }
+
+            ProductsAttribute::where('id', $request->attrId)->update(['status' => $attrStatus]);
+            return response()->json(['attrStatus' => $attrStatus, 'product_id' => $request->attrId]);
+            /*   return $request->all();*/
+        }
+    }
+
+    public function deleteProductAttribute($id)
+    {
+        ProductsAttribute::where('id',$id)->delete();
+        return redirect()->back()->with('flash_message_success','Product  has been deleted successfully');
+    }
 }

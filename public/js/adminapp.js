@@ -49570,7 +49570,9 @@ var app = new Vue({
     getSectionId: '',
     getCategories: '',
     proId: '',
-    proStatus: ''
+    proStatus: '',
+    attrStatus: '',
+    attrId: ''
   },
   methods: {
     key: function key(event) {
@@ -49683,6 +49685,40 @@ var app = new Vue({
         _this5.error = 1;
         console.log('error');
       });
+    },
+    changeAttributeStatus: function changeAttributeStatus(attrId) {
+      var _this6 = this;
+
+      this.attrStatus = document.getElementById('attribute-' + attrId).innerText;
+      this.attrId = attrId;
+      axios.post('/admin/update-attribute-status', {
+        attrId: this.attrId,
+        attrStatus: this.attrStatus
+      }).then(function (response) {
+        if (response.data.attrStatus == 0) {
+          document.getElementById('attribute-' + response.data.product_id).innerText = 'inactive';
+        } else {
+          document.getElementById('attribute-' + response.data.product_id).innerText = 'Active';
+        }
+      }, function (response) {
+        _this6.error = 1;
+        console.log('error');
+      });
+    },
+    confirmDeleteProductStatus: function confirmDeleteProductStatus(par1, par2) {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then(function (result) {
+        if (result.isConfirmed) {
+          window.location.href = "/admin/delete-" + par2 + "/" + par1;
+        }
+      });
     }
   }
 }); //confirm delete of record
@@ -49741,7 +49777,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\ecom6\resources\js\adminapp.js */"./resources/js/adminapp.js");
+module.exports = __webpack_require__(/*! D:\traning\ecom\project\resources\js\adminapp.js */"./resources/js/adminapp.js");
 
 
 /***/ })
