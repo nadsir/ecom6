@@ -42,7 +42,9 @@ const app = new Vue({
         proId:'',
         proStatus:'',
         attrStatus:'',
-        attrId:''
+        attrId:'',
+        imgId:'',
+        imgStatus:'',
     },
     methods: {
         key: function (event) {
@@ -179,7 +181,39 @@ const app = new Vue({
                 }
             })
         },
+        changeImageeStatus:function (imgId){
+            this.imgStatus = document.getElementById('image-'+imgId).innerText;
+            this.imgId = imgId;
+            axios.post('/admin/update-image-status', {imgId: this.imgId, imgStatus: this.imgStatus})
+                .then(response => {
+                        if (response.data.attrStatus == 0) {
+                            document.getElementById('image-' + response.data.image_id).innerText = 'inactive';
+                        } else {
+                            document.getElementById('image-' + response.data.image_id).innerText = 'Active';
+                        }
+                    },
+                    response => {
+                        this.error = 1;
+                        console.log('error');
+                    });
+        },
+        confirmDeleteProductImage:function (par1,par2){
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href="/admin/delete-"+par2+"/"+par1;
+                }
+            })
+        },
     },
+
 
 });
 

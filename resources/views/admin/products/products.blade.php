@@ -78,7 +78,9 @@ product
                                                     <a class="UpdateProductStatus" section_id="{{$product->status}}" href="javascript:void(0)" id="product-{{$product->id}}" v-on:click="changeProductStatus({{$product->id}})">Inactive</a>
                                                 @endif</td>
                                             <td>
-                                                <a title="Add Attributes" href={{url('admin/add-attributes/'.$product->id)}}><i class="fas fa-plus"></i></a>
+                                                <a title="Add Attributes" href={{url('admin/add-attributes/'.$product->id)}}><i class="fas fa-plus"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                <a title="Add Images" href={{url('admin/add-images/'.$product->id)}}><i class="fas fa-plus-circle"></i></a>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <a title="Edit Products" href={{url('admin/add-edit-product/'.$product->id)}}><i class="fas fa-edit"></i></a>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

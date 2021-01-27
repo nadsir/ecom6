@@ -49572,7 +49572,9 @@ var app = new Vue({
     proId: '',
     proStatus: '',
     attrStatus: '',
-    attrId: ''
+    attrId: '',
+    imgId: '',
+    imgStatus: ''
   },
   methods: {
     key: function key(event) {
@@ -49706,6 +49708,40 @@ var app = new Vue({
       });
     },
     confirmDeleteProductStatus: function confirmDeleteProductStatus(par1, par2) {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then(function (result) {
+        if (result.isConfirmed) {
+          window.location.href = "/admin/delete-" + par2 + "/" + par1;
+        }
+      });
+    },
+    changeImageeStatus: function changeImageeStatus(imgId) {
+      var _this7 = this;
+
+      this.imgStatus = document.getElementById('image-' + imgId).innerText;
+      this.imgId = imgId;
+      axios.post('/admin/update-image-status', {
+        imgId: this.imgId,
+        imgStatus: this.imgStatus
+      }).then(function (response) {
+        if (response.data.attrStatus == 0) {
+          document.getElementById('image-' + response.data.image_id).innerText = 'inactive';
+        } else {
+          document.getElementById('image-' + response.data.image_id).innerText = 'Active';
+        }
+      }, function (response) {
+        _this7.error = 1;
+        console.log('error');
+      });
+    },
+    confirmDeleteProductImage: function confirmDeleteProductImage(par1, par2) {
       Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",

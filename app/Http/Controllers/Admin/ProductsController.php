@@ -6,6 +6,7 @@ use App\Category;
 use App\Http\Controllers\Controller;
 use App\Product;
 use App\ProductsAttribute;
+use App\ProductsImage;
 use App\Section;
 use Image;
 use Illuminate\Http\Request;
@@ -88,54 +89,8 @@ class ProductsController extends Controller
 
             ];
             $this->validate($request, $role, $customMessage);
-            if (empty($data['is_featured'])){
-                $is_featured="No";
-            }else{
-                $is_featured="Yes";
-            }
-            if (empty($data['fabric'])){
-                $data['fabric']="";
-            }
-            if (empty($data['product_video'])){
-                $data['product_video']="";
-            }
-            if (empty($data['main_image'])){
-                $data['main_image']="";
-            }
-            if (empty($data['product_discount'])){
-                $data['product_discount']=10.3;
-            }
-            if (empty($data['product_weight'])){
-                $data['product_weight']=10.3;
-            }
 
-            if (empty($data['pattern'])){
-                $data['pattern']="";
-            }
-            if (empty($data['sleeve'])){
-                $data['sleeve']="";
-            }
-            if (empty($data['fit'])){
-                $data['fir']="";
-            }
-            if (empty($data['occasion'])){
-                $data['occasion']="";
-            }
-            if (empty($data['description'])){
-                $data['description']="";
-            }
-            if (empty($data['wash_care'])){
-                $data['wash_care']="";
-            }
-            if (empty($data['meta_title'])){
-                $data['meta_title']="";
-            }
-            if (empty($data['meta_description'])){
-                $data['meta_description']="";
-            }
-            if (empty($data['meta_keywords'])){
-                $data['meta_keywords']="";
-            }
+
             //Upload Product Images
             if ($request->hasFile('main_image')){
                 $image_tmp=$request->file('main_image');
@@ -202,7 +157,10 @@ class ProductsController extends Controller
             $product->meta_keywords=$data['meta_keywords'];
             $product->meta_description=$data['meta_description'];
             $product->status=1;
-            $product->is_featured=$is_featured;
+            if (!empty($data['is_featured'])) {
+                $product->is_featured = $data['is_featured'];
+            }
+            $product->is_featured = 'No';
             $product->save();
             session::flash('success_message',$message);
             return redirect('admin/products');
@@ -335,5 +293,74 @@ class ProductsController extends Controller
     {
         ProductsAttribute::where('id',$id)->delete();
         return redirect()->back()->with('flash_message_success','Product  has been deleted successfully');
+    }
+
+    public function addImages(Request $request,$id)
+    {
+        if($request->isMethod('post')){
+
+            if($request->hasFile('images')){
+                $images=$request->file('images');
+                foreach ($images as $key=>$image){
+                    $prdouctImage=new ProductsImage;
+                    $image_tmp=Image::make($image);
+                    $extension=$image->getClientOriginalExtension();
+                    $imageName=rand(111,999999).time().".".$extension;
+                    $large_image_path='images/admin_images/product_images/large/'.$imageName;
+                    $medium_image_path='images/admin_images/product_images/medium/'.$imageName;
+                    $small_image_path='images/admin_images/product_images/small/'.$imageName;
+                    Image::make($image_tmp)->save($large_image_path);
+                    Image::make($image_tmp)->resize(520,600)->save($medium_image_path);
+                    Image::make($image_tmp)->resize(260,300)->save($small_image_path);
+
+                    $prdouctImage->image=$imageName;
+                    $prdouctImage->product_id=$id;
+                    $prdouctImage->save();
+
+                }
+                $message='Product Images has been added successfully';
+                session::flash('flash_message_success',$message);
+                return redirect()->back();
+            }
+        }
+        $productdata=Product::with('images')->select('id','product_name','product_code','product_color','main_image')->first($id);
+        $title="Product Images";
+        return view('admin.products.add_images')->with(compact('productdata','title'));
+
+    }
+
+    public function updateImageStatus(Request $request){
+
+        if ($request->ajax()) {
+            if ($request->imgStatus == "Active") {
+                $imgStatus = 0;
+            } else {
+                $imgStatus = 1;
+            }
+
+            ProductsImage::where('id', $request->imgId)->update(['status' => $imgStatus]);
+            return response()->json(['attrStatus' => $imgStatus, 'image_id' => $request->imgId]);
+            /*   return $request->all();*/
+        }
+    }
+    public function deleteProductImages($id)
+    {
+        $productImage=ProductsImage::select('image')->where('id',$id)->first();
+        //get category image paths
+        $small_image_path='images/admin_images/product_images/small/';
+        $medium_image_path='images/admin_images/product_images/medium/';
+        $large_image_path='images/admin_images/product_images/large/';
+        //delete small product image from product_images folder if exist
+        if (file_exists($small_image_path.$productImage->image)){
+            unlink($small_image_path.$productImage->image);
+        }
+        if (file_exists($medium_image_path.$productImage->image)){
+            unlink($medium_image_path .$productImage->image);
+        }
+        if (file_exists($large_image_path.$productImage->image)){
+            unlink($large_image_path .$productImage->image);
+        }
+        ProductsImage::where('id',$id)->delete();
+        return redirect()->back()->with('flash_message_success','Product Image  has been deleted successfully');
     }
 }
