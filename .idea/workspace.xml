@@ -16,19 +16,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 50&#10;we make multiple images for our product we make migration model and seeder&#10;for make this table">
-      <change afterPath="$PROJECT_DIR$/app/ProductsAttribute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ProductsImage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/add_images.blade.php" afterDir="false" />
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/adminapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/adminapp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/adminapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/adminapp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +230,8 @@
       <workItem from="1611383636845" duration="10598000" />
       <workItem from="1611469267932" duration="12977000" />
       <workItem from="1611641725288" duration="5912000" />
-      <workItem from="1611727669230" duration="2416000" />
+      <workItem from="1611727669230" duration="6890000" />
+      <workItem from="1611986579626" duration="1337000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -350,7 +341,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۱۸" />
       <updated>1611488894533</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL‎۰۰۰۱۹" summary="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages">
+      <created>1611734008574</created>
+      <option name="number" value="LOCAL‎۰۰۰۱۹" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۱۹" />
+      <updated>1611734008574</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +396,8 @@
     <MESSAGE value="lesson 47&#10;show product attribute in attribute page we made preparations for admin &#10;that can not add same product size and sku for for the one Product" />
     <MESSAGE value="lesson 49&#10;we add Active Inactive button for product status and add delete button for deleting &#10;attributes by ajax and sweet alert that we make in last video" />
     <MESSAGE value="lesson 50&#10;we make multiple images for our product we make migration model and seeder&#10;for make this table" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 50&#10;we make multiple images for our product we make migration model and seeder&#10;for make this table" />
+    <MESSAGE value="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="256" key="#Notifications" timestamp="1608823008050">
@@ -470,10 +468,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1239" y="280" width="540" height="524" key="StructurePopup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609054666721" />
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1611488903039">
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1611734011441">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611488903039" />
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611734011441" />
     <state x="442" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729176729" />
     <state x="390" y="293" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608824329746" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
