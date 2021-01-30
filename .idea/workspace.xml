@@ -16,9 +16,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages">
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 53&#10;make brand migration and model and seeder for brand table in database">
+      <change afterPath="$PROJECT_DIR$/app/Brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BrandContorller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_30_061815_create_brands_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/add_edit_brand.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/brands.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/adminapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/adminapp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/adminapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/adminapp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +239,7 @@
       <workItem from="1611469267932" duration="12977000" />
       <workItem from="1611641725288" duration="5912000" />
       <workItem from="1611727669230" duration="6890000" />
-      <workItem from="1611986579626" duration="1337000" />
+      <workItem from="1611986579626" duration="14540000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -347,7 +355,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۱۹" />
       <updated>1611734008574</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL‎۰۰۰۲۰" summary="lesson 53&#10;make brand migration and model and seeder for brand table in database">
+      <created>1611988205927</created>
+      <option name="number" value="LOCAL‎۰۰۰۲۰" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۲۰" />
+      <updated>1611988205927</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +411,8 @@
     <MESSAGE value="lesson 49&#10;we add Active Inactive button for product status and add delete button for deleting &#10;attributes by ajax and sweet alert that we make in last video" />
     <MESSAGE value="lesson 50&#10;we make multiple images for our product we make migration model and seeder&#10;for make this table" />
     <MESSAGE value="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages" />
+    <MESSAGE value="lesson 53&#10;make brand migration and model and seeder for brand table in database" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 53&#10;make brand migration and model and seeder for brand table in database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="256" key="#Notifications" timestamp="1608823008050">
@@ -408,10 +423,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1186" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611387365736" />
-    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609058989053">
+    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611992363812">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609058989053" />
+    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611992363812" />
     <state x="188" y="26" width="1117" height="825" key="CommitChangelistDialog2" timestamp="1608822612564">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -456,10 +471,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611406069662" />
-    <state x="-1025" y="238" key="NewPhpFileDialog" timestamp="1611492709610">
+    <state x="-875" y="399" key="NewPhpFileDialog" timestamp="1611993601604">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1025" y="238" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611492709610" />
+    <state x="-875" y="399" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611993601604" />
     <state x="278" y="95" key="SettingsEditor" timestamp="1608729140021">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -468,10 +483,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1239" y="280" width="540" height="524" key="StructurePopup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609054666721" />
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1611734011441">
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1611988218826">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611734011441" />
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611988218826" />
     <state x="442" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729176729" />
     <state x="390" y="293" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608824329746" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
@@ -490,10 +505,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="609" y="331" key="git4idea.ui.GitStashDialog/0.0.1536.864@0.0.1536.864" timestamp="1608824302314" />
-    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611729869625">
+    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611993570082">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611729869625" />
+    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611993570082" />
     <state x="632" y="265" key="svn.repositoryBrowser" timestamp="1608727499088">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

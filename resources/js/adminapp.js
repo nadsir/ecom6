@@ -45,6 +45,8 @@ const app = new Vue({
         attrId:'',
         imgId:'',
         imgStatus:'',
+        brandStatus:'',
+        brandId:''
     },
     methods: {
         key: function (event) {
@@ -211,6 +213,26 @@ const app = new Vue({
                     window.location.href="/admin/delete-"+par2+"/"+par1;
                 }
             })
+        },
+        changeBrandsStatus:function (brandId){
+
+            this.brandStatus=$("#brands-"+brandId).children("i").attr("status");
+            console.log(this.brandStatus);
+            this.brandId = brandId;
+            axios.post('/admin/update-brands-status', {brandId: this.brandId, brandStatus: this.brandStatus})
+                .then(response => {
+                        if (response.data.brandStatus == 0) {
+                            $("#brands-"+ response.data.brandId).children("i").attr("status",'Inactive');
+                            $("#brands-" + response.data.brandId).children("i").attr("class",'fas fa-toggle-off');
+                        } else {
+                            $("#brands-" + response.data.brandId).children("i").attr("status",'Active');
+                            $("#brands-" + response.data.brandId).children("i").attr("class",'fas fa-toggle-on');
+                        }
+                    },
+                    response => {
+                        this.error = 1;
+                        console.log('error');
+                    });
         },
     },
 

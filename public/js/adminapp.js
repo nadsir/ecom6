@@ -49574,7 +49574,9 @@ var app = new Vue({
     attrStatus: '',
     attrId: '',
     imgId: '',
-    imgStatus: ''
+    imgStatus: '',
+    brandStatus: '',
+    brandId: ''
   },
   methods: {
     key: function key(event) {
@@ -49754,6 +49756,28 @@ var app = new Vue({
         if (result.isConfirmed) {
           window.location.href = "/admin/delete-" + par2 + "/" + par1;
         }
+      });
+    },
+    changeBrandsStatus: function changeBrandsStatus(brandId) {
+      var _this8 = this;
+
+      this.brandStatus = $("#brands-" + brandId).children("i").attr("status");
+      console.log(this.brandStatus);
+      this.brandId = brandId;
+      axios.post('/admin/update-brands-status', {
+        brandId: this.brandId,
+        brandStatus: this.brandStatus
+      }).then(function (response) {
+        if (response.data.brandStatus == 0) {
+          $("#brands-" + response.data.brandId).children("i").attr("status", 'Inactive');
+          $("#brands-" + response.data.brandId).children("i").attr("class", 'fas fa-toggle-off');
+        } else {
+          $("#brands-" + response.data.brandId).children("i").attr("status", 'Active');
+          $("#brands-" + response.data.brandId).children("i").attr("class", 'fas fa-toggle-on');
+        }
+      }, function (response) {
+        _this8.error = 1;
+        console.log('error');
       });
     }
   }
