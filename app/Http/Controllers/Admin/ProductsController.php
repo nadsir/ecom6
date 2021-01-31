@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Brand;
 use App\Category;
 use App\Http\Controllers\Controller;
 use App\Product;
@@ -70,6 +71,7 @@ class ProductsController extends Controller
             //product Validation
             $role = [
                 'category_id'=>'required',
+                'brand_id'=>'required',
                 'product_name' => 'required|regex:/^[\pL\s\-]+$/u',
                 'product_code' => 'required|regex:/^[\w-]*$/',
                 'product_price'=>'required|numeric',
@@ -135,6 +137,7 @@ class ProductsController extends Controller
             //save Product details in product table
             $categoryDetails=Category::find($data['category_id']);
             $product->section_id=$categoryDetails['section_id'];
+            $product->brand_id=$data['brand_id'];
             $product->category_id=$data['category_id'];
             $product->product_name=$data['product_name'];
             $product->product_code=$data['product_code'];
@@ -176,11 +179,10 @@ class ProductsController extends Controller
         //Sections with categories and sub categories
         $categories=Section::with('categories')->get();
         $categories=json_decode(json_encode($categories),true);
-
-
-
-
-        return view('admin.products.add_edit_products')->with(compact('title','fabricArray','sleeveArray','patternArray','fitArray','occasionArray','categories','productdata'));
+        //Get all brands
+        $brands=Brand::where('status',1)->get();
+        $brands=json_decode(json_encode($brands));
+        return view('admin.products.add_edit_products')->with(compact('title','fabricArray','sleeveArray','patternArray','fitArray','occasionArray','categories','productdata','brands'));
     }
     public function deleteProductImage($id){
         //get product image

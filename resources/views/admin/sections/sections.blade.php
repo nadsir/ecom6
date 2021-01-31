@@ -35,9 +35,9 @@
                                     <td>{{$section->name}}</td>
                                     <td>
                                         @if($section->status==1)
-                                            <a class="UpdateSectionStatus" section_id="{{$section->status}}" href="javascript:void(0)" id="section-{{$section->id}}" v-on:click="changeStatus({{$section->id}})" >Active</a>
+                                            <a class="UpdateSectionStatus" section_id="{{$section->status}}" href="javascript:void(0)" id="section-{{$section->id}}" v-on:click="changeStatus({{$section->id}})" ><i class="fas fa-toggle-on" status="Active"></i></a>
                                         @else
-                                            <a class="UpdateSectionStatus" section_id="{{$section->status}}" href="javascript:void(0)" id="section-{{$section->id}}" v-on:click="changeStatus({{$section->id}})">Inactive</a>
+                                            <a class="UpdateSectionStatus" section_id="{{$section->status}}" href="javascript:void(0)" id="section-{{$section->id}}" v-on:click="changeStatus({{$section->id}})"><i class="fas fa-toggle-off" status="Inactive"></i></a>
                                         @endif</td>
                                 </tr>
                                 @endforeach

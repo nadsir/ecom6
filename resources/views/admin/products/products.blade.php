@@ -73,9 +73,9 @@ product
                                             <td>{{$product->section->name}}</td>
                                             <td>
                                                 @if($product->status==1)
-                                                    <a class="UpdateProductStatus" section_id="{{$product->status}}" href="javascript:void(0)" id="product-{{$product->id}}" v-on:click="changeProductStatus({{$product->id}})" >Active</a>
+                                                    <a class="UpdateProductStatus" section_id="{{$product->status}}" href="javascript:void(0)" id="product-{{$product->id}}" v-on:click="changeProductStatus({{$product->id}})" ><i class="fas fa-toggle-on" status="Active"></i></a>
                                                 @else
-                                                    <a class="UpdateProductStatus" section_id="{{$product->status}}" href="javascript:void(0)" id="product-{{$product->id}}" v-on:click="changeProductStatus({{$product->id}})">Inactive</a>
+                                                    <a class="UpdateProductStatus" section_id="{{$product->status}}" href="javascript:void(0)" id="product-{{$product->id}}" v-on:click="changeProductStatus({{$product->id}})"><i class="fas fa-toggle-off" status="Inactive"></i></a>
                                                 @endif</td>
                                             <td>
                                                 <a title="Add Attributes" href={{url('admin/add-attributes/'.$product->id)}}><i class="fas fa-plus"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;

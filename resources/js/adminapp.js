@@ -71,14 +71,16 @@ const app = new Vue({
                     });
         },
         changeStatus: function (par2) {
-            this.par1 = document.getElementById('section-' + par2).innerText;
+            this.par1 = $("#section-"+par2).children("i").attr("status");
             this.par2 = par2;
             axios.post('/admin/update-section-status', {par1: this.par1, par2: this.par2})
                 .then(response => {
                         if (response.data.status == 0) {
-                            document.getElementById('section-' + response.data.section_id).innerText = 'inactive';
+                            $("#section-"+ response.data.section_id).children("i").attr("status",'Inactive');
+                            $("#section-"+ response.data.section_id).children("i").attr("class",'fas fa-toggle-off');
                         } else {
-                            document.getElementById('section-' + response.data.section_id).innerText = 'Active';
+                            $("#section-"+ response.data.section_id).children("i").attr("status",'Active');
+                            $("#section-"+ response.data.section_id).children("i").attr("class",'fas fa-toggle-on');
                         }
                     },
                     response => {
@@ -88,14 +90,16 @@ const app = new Vue({
 
         },
         changeCategoryStatus: function (catId) {
-            this.catStatus = document.getElementById('category-' + catId).innerText;
+            this.catStatus = $("#category-"+catId).children("i").attr("status");
             this.catId = catId;
             axios.post('/admin/update-category-status', {catId: this.catId, catStatus: this.catStatus})
                 .then(response => {
                         if (response.data.catStatus == 0) {
-                            document.getElementById('category-' + response.data.category_id).innerText = 'inactive';
+                            $("#category-"+ response.data.category_id).children("i").attr("status",'Inactive');
+                            $("#category-"+ response.data.category_id).children("i").attr("class",'fas fa-toggle-off');
                         } else {
-                            document.getElementById('category-' + response.data.category_id).innerText = 'Active';
+                            $("#category-"+ response.data.category_id).children("i").attr("status",'Active');
+                            $("#category-"+ response.data.category_id).children("i").attr("class",'fas fa-toggle-on');
                         }
                     },
                     response => {
@@ -135,14 +139,16 @@ const app = new Vue({
             })
         },
         changeProductStatus: function (proId) {
-            this.proStatus = document.getElementById('product-' + proId).innerText;
+            this.proStatus = $("#product-"+ proId).children("i").attr("status");
             this.proId = proId;
             axios.post('/admin/update-product-status', {proId: this.proId, proStatus: this.proStatus})
                 .then(response => {
                         if (response.data.proStatus == 0) {
-                            document.getElementById('product-' + response.data.product_id).innerText = 'inactive';
+                            $("#product-"+ response.data.product_id).children("i").attr("status",'Inactive');
+                            $("#product-"+ response.data.product_id).children("i").attr("class",'fas fa-toggle-off');
                         } else {
-                            document.getElementById('product-' + response.data.product_id).innerText = 'Active';
+                            $("#product-"+ response.data.product_id).children("i").attr("status",'Active');
+                            $("#product-"+ response.data.product_id).children("i").attr("class",'fas fa-toggle-on');
                         }
                     },
                     response => {
@@ -223,10 +229,10 @@ const app = new Vue({
                 .then(response => {
                         if (response.data.brandStatus == 0) {
                             $("#brands-"+ response.data.brandId).children("i").attr("status",'Inactive');
-                            $("#brands-" + response.data.brandId).children("i").attr("class",'fas fa-toggle-off');
+                            $("#brands-"+ response.data.brandId).children("i").attr("class",'fas fa-toggle-off');
                         } else {
-                            $("#brands-" + response.data.brandId).children("i").attr("status",'Active');
-                            $("#brands-" + response.data.brandId).children("i").attr("class",'fas fa-toggle-on');
+                            $("#brands-"+ response.data.brandId).children("i").attr("status",'Active');
+                            $("#brands-"+ response.data.brandId).children("i").attr("class",'fas fa-toggle-on');
                         }
                     },
                     response => {

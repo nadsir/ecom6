@@ -66,15 +66,15 @@
                                             <td>{{$category->url}}</td>
                                             <td>
                                                 @if($category->status==1)
-                                                    <a class="UpdateCategoryStatus" section_id="{{$category->status}}" href="javascript:void(0)" id="category-{{$category->id}}" v-on:click="changeCategoryStatus({{$category->id}})" >Active</a>
+                                                    <a class="UpdateCategoryStatus" section_id="{{$category->status}}" href="javascript:void(0)" id="category-{{$category->id}}" v-on:click="changeCategoryStatus({{$category->id}})" ><i class="fas fa-toggle-on" status="Active"></i></a>
                                                 @else
-                                                    <a class="UpdateCategoryStatus" section_id="{{$category->status}}" href="javascript:void(0)" id="category-{{$category->id}}" v-on:click="changeCategoryStatus({{$category->id}})">Inactive</a>
+                                                    <a class="UpdateCategoryStatus" section_id="{{$category->status}}" href="javascript:void(0)" id="category-{{$category->id}}" v-on:click="changeCategoryStatus({{$category->id}})"><i class="fas fa-toggle-off" status="Inactive"></i></a>
                                                 @endif</td>
                                             <td>
-                                                <a href={{url('admin/add-edit-category/'.$category->id)}}"">Edit</a>
+                                                <a href={{url('admin/add-edit-category/'.$category->id)}}""><i class="fas fa-edit"></i></a>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <a  v-on:click="confirmDelete({{$category->id}},'category')" class="confirmDelete"
-                                                    name="category" href="javascript:void (0)" {{--href="{{url('admin/delete-category/'.$category->id)}}"--}}>Delete</a>
+                                                    name="category" href="javascript:void (0)" ><i class="fas fa-trash"></i></a>
                                             </td>
 
                                         </tr>
