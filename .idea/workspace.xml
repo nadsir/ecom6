@@ -16,15 +16,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 55&#10;in this chapter we make insert page for adding brand and editing brand &#10;and deleting brand and active in active button in graphic version with&#10;font awsome with two page brands and add_edit_brande and brandcontroller">
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 56&#10;we add brands to our product and we can &#10;and complete all the active inactive button and &#10;delete and edit icon for all terms of our admin panel&#10;and complete the admin panel">
+      <change afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/adminapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/adminapp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/adminapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/adminapp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/categories.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/add_edit_products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/add_edit_products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sections/sections.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sections/sections.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -171,6 +178,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -184,6 +192,7 @@
       <recent name="C:\xampp\htdocs\ecom6\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\traning\ecom\project\public\css" />
       <recent name="C:\xampp\htdocs\ecom6\public\images\admin_images\product_images\small" />
       <recent name="C:\xampp\htdocs\ecom6\app\Http\Controllers\Admin" />
     </key>
@@ -238,7 +247,11 @@
       <workItem from="1611641725288" duration="5912000" />
       <workItem from="1611727669230" duration="6890000" />
       <workItem from="1611986579626" duration="15079000" />
-      <workItem from="1612074784928" duration="10226000" />
+      <workItem from="1612074784928" duration="11669000" />
+      <workItem from="1612161081840" duration="19286000" />
+      <workItem from="1612245622067" duration="12675000" />
+      <workItem from="1612331292849" duration="17141000" />
+      <workItem from="1612600686584" duration="5688000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -366,7 +379,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۲۱" />
       <updated>1612012223115</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL‎۰۰۰۲۲" summary="lesson 56&#10;we add brands to our product and we can &#10;and complete all the active inactive button and &#10;delete and edit icon for all terms of our admin panel&#10;and complete the admin panel">
+      <created>1612088320844</created>
+      <option name="number" value="LOCAL‎۰۰۰۲۲" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۲۲" />
+      <updated>1612088320844</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,17 +437,18 @@
     <MESSAGE value="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages" />
     <MESSAGE value="lesson 53&#10;make brand migration and model and seeder for brand table in database" />
     <MESSAGE value="lesson 55&#10;in this chapter we make insert page for adding brand and editing brand &#10;and deleting brand and active in active button in graphic version with&#10;font awsome with two page brands and add_edit_brande and brandcontroller" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 55&#10;in this chapter we make insert page for adding brand and editing brand &#10;and deleting brand and active in active button in graphic version with&#10;font awsome with two page brands and add_edit_brande and brandcontroller" />
+    <MESSAGE value="lesson 56&#10;we add brands to our product and we can &#10;and complete all the active inactive button and &#10;delete and edit icon for all terms of our admin panel&#10;and complete the admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 56&#10;we add brands to our product and we can &#10;and complete all the active inactive button and &#10;delete and edit icon for all terms of our admin panel&#10;and complete the admin panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="256" key="#Notifications" timestamp="1608823008050">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="526" y="256" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1608823008050" />
-    <state x="-1186" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611387365736">
+    <state x="-1186" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612608361365">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1186" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611387365736" />
+    <state x="-1186" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608361365" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611992363812">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -477,10 +497,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611406069662" />
-    <state x="-875" y="399" key="NewPhpFileDialog" timestamp="1611993601604">
+    <state x="-875" y="399" key="NewPhpFileDialog" timestamp="1612602518520">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-875" y="399" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611993601604" />
+    <state x="-875" y="399" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612602518520" />
     <state x="278" y="95" key="SettingsEditor" timestamp="1608729140021">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -489,10 +509,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1239" y="280" width="540" height="524" key="StructurePopup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609054666721" />
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1612012224884">
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1612088331636">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612012224884" />
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612088331636" />
     <state x="442" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729176729" />
     <state x="390" y="293" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608824329746" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
@@ -511,10 +531,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="609" y="331" key="git4idea.ui.GitStashDialog/0.0.1536.864@0.0.1536.864" timestamp="1608824302314" />
-    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611993570082">
+    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1612608411477">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611993570082" />
+    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608411477" />
     <state x="632" y="265" key="svn.repositoryBrowser" timestamp="1608727499088">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

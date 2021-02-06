@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Auth::routes();
 
@@ -62,6 +62,13 @@ Route::prefix('/admin')->namespace('Admin')->group(function (){
         Route::post('update-brands-status','BrandContorller@updateBrandsStatus');
         Route::match(['get','post'],'add-edit-brand/{id?}','BrandContorller@addEditBrand');
         Route::get('delete-brand/{id}','BrandContorller@deleteBrand');
+
     });
 
+});
+
+Route::get('/test','TestController@showMenu');
+
+Route::namespace('Front')->group(function (){
+    Route::get('/','IndexController@index');
 });

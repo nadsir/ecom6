@@ -31,18 +31,18 @@
     <link rel="stylesheet" href="{{url('plugins/summernote/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
+    {{--register custom css for custom page--}}
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper" id="adminapp">
 
-    @include('layouts.admin_layout.admin_header')
-    @include('layouts.admin_layout.admin_sidebar')
-    @yield('content')
+@include('layouts.admin_layout.admin_header')
+@include('layouts.admin_layout.admin_sidebar')
+@yield('content')
 <!-- /.content-wrapper -->
-    @include('layouts.admin_layout.admin_footer')
-    <!-- Control Sidebar -->
+@include('layouts.admin_layout.admin_footer')
+<!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Control sidebar content goes here -->
     </aside>
@@ -107,7 +107,7 @@
     $('.select2').select2()
 </script>
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
         var maxField = 10; //Input fields increment limitation
         var addButton = $('.add_button'); //Add button selector
         var wrapper = $('.field_wrapper'); //Input field wrapper
@@ -122,16 +122,16 @@
         var x = 1; //Initial field counter is 1
 
         //Once add button is clicked
-        $(addButton).click(function(){
+        $(addButton).click(function () {
             //Check maximum number of input fields
-            if(x < maxField){
+            if (x < maxField) {
                 x++; //Increment field counter
                 $(wrapper).append(fieldHTML); //Add field html
             }
         });
 
         //Once remove button is clicked
-        $(wrapper).on('click', '.remove_button', function(e){
+        $(wrapper).on('click', '.remove_button', function (e) {
             e.preventDefault();
             $(this).parent('div').remove(); //Remove field html
             x--; //Decrement field counter
