@@ -16,17 +16,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 60 ,61 &#10;making front ecome index file or landing page and related css and javascript and images to this file">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/LandingPage/Footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/LandingPage/LatestProduct.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/LandingPage/SideBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/LandingPage/Slider.vue" afterDir="false" />
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 62&#10;we made dynamic menu from database in 3 level">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +255,7 @@
       <workItem from="1615283008934" duration="1219000" />
       <workItem from="1617524792741" duration="151000" />
       <workItem from="1618046770484" duration="1822000" />
-      <workItem from="1618121289838" duration="2381000" />
+      <workItem from="1618121289838" duration="3351000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -403,7 +395,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۲۳" />
       <updated>1612609403862</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL‎۰۰۰۲۴" summary="lesson 62&#10;we made dynamic menu from database in 3 level">
+      <created>1618123741888</created>
+      <option name="number" value="LOCAL‎۰۰۰۲۴" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۲۴" />
+      <updated>1618123741888</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +455,8 @@
     <MESSAGE value="lesson 55&#10;in this chapter we make insert page for adding brand and editing brand &#10;and deleting brand and active in active button in graphic version with&#10;font awsome with two page brands and add_edit_brande and brandcontroller" />
     <MESSAGE value="lesson 56&#10;we add brands to our product and we can &#10;and complete all the active inactive button and &#10;delete and edit icon for all terms of our admin panel&#10;and complete the admin panel" />
     <MESSAGE value="lesson 60 ,61 &#10;making front ecome index file or landing page and related css and javascript and images to this file" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 60 ,61 &#10;making front ecome index file or landing page and related css and javascript and images to this file" />
+    <MESSAGE value="lesson 62&#10;we made dynamic menu from database in 3 level" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 62&#10;we made dynamic menu from database in 3 level" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -509,9 +508,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1754" y="79" width="1309" height="905" key="SettingsEditor/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1615283638392" />
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1612609443112">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618123772292">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618123772292" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
       <screen x="-1920" y="0" width="1920" height="1080" />
