@@ -16,21 +16,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 56&#10;we add brands to our product and we can &#10;and complete all the active inactive button and &#10;delete and edit icon for all terms of our admin panel&#10;and complete the admin panel">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_sidebar.blade.php" afterDir="false" />
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 60 ,61 &#10;making front ecome index file or landing page and related css and javascript and images to this file">
+      <change afterPath="$PROJECT_DIR$/resources/js/components/LandingPage/Footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/LandingPage/LatestProduct.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/LandingPage/SideBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/LandingPage/Slider.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin_layout/admin_layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +42,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -180,21 +177,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\traning\ecom\project\resources\js\components\LandingPage" />
+      <recent name="D:\traning\ecom\project\public\css" />
+      <recent name="C:\xampp\htdocs\ecom6\public\images\admin_images\product_images\small" />
+      <recent name="C:\xampp\htdocs\ecom6\app\Http\Controllers\Admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\traning\ecom\project\resources\js\components" />
       <recent name="D:\traning\ecom\project" />
       <recent name="C:\xampp\htdocs\ecom6\app" />
       <recent name="C:\xampp\htdocs\ecom6\public\js" />
       <recent name="C:\xampp\htdocs\ecom6\public\css" />
-      <recent name="C:\xampp\htdocs\ecom6\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\traning\ecom\project\public\css" />
-      <recent name="C:\xampp\htdocs\ecom6\public\images\admin_images\product_images\small" />
-      <recent name="C:\xampp\htdocs\ecom6\app\Http\Controllers\Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -251,7 +249,21 @@
       <workItem from="1612161081840" duration="19286000" />
       <workItem from="1612245622067" duration="12675000" />
       <workItem from="1612331292849" duration="17141000" />
-      <workItem from="1612600686584" duration="5688000" />
+      <workItem from="1612600686584" duration="10082000" />
+      <workItem from="1612616137171" duration="693000" />
+      <workItem from="1612678394873" duration="10227000" />
+      <workItem from="1612764083251" duration="8332000" />
+      <workItem from="1612851426621" duration="1169000" />
+      <workItem from="1612856090960" duration="3148000" />
+      <workItem from="1612867859917" duration="4077000" />
+      <workItem from="1615273577615" duration="1054000" />
+      <workItem from="1615281213086" duration="273000" />
+      <workItem from="1615281537579" duration="1024000" />
+      <workItem from="1615282716795" duration="92000" />
+      <workItem from="1615283008934" duration="1219000" />
+      <workItem from="1617524792741" duration="151000" />
+      <workItem from="1618046770484" duration="1822000" />
+      <workItem from="1618121289838" duration="2381000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -385,7 +397,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۲۲" />
       <updated>1612088320844</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL‎۰۰۰۲۳" summary="lesson 60 ,61 &#10;making front ecome index file or landing page and related css and javascript and images to this file">
+      <created>1612609403862</created>
+      <option name="number" value="LOCAL‎۰۰۰۲۳" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۲۳" />
+      <updated>1612609403862</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,49 +456,31 @@
     <MESSAGE value="lesson 53&#10;make brand migration and model and seeder for brand table in database" />
     <MESSAGE value="lesson 55&#10;in this chapter we make insert page for adding brand and editing brand &#10;and deleting brand and active in active button in graphic version with&#10;font awsome with two page brands and add_edit_brande and brandcontroller" />
     <MESSAGE value="lesson 56&#10;we add brands to our product and we can &#10;and complete all the active inactive button and &#10;delete and edit icon for all terms of our admin panel&#10;and complete the admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 56&#10;we add brands to our product and we can &#10;and complete all the active inactive button and &#10;delete and edit icon for all terms of our admin panel&#10;and complete the admin panel" />
+    <MESSAGE value="lesson 60 ,61 &#10;making front ecome index file or landing page and related css and javascript and images to this file" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 60 ,61 &#10;making front ecome index file or landing page and related css and javascript and images to this file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="526" y="256" key="#Notifications" timestamp="1608823008050">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="526" y="256" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1608823008050" />
+    <state x="-1194" y="373" key="#Custom_Plugin_Repositories/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1615281628285" />
+    <state x="-1294" y="195" key="#HTTP_Proxy" timestamp="1615282456519">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1294" y="195" key="#HTTP_Proxy/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1615282456519" />
     <state x="-1186" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612608361365">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1186" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608361365" />
-    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611992363812">
+    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612612775242">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611992363812" />
-    <state x="188" y="26" width="1117" height="825" key="CommitChangelistDialog2" timestamp="1608822612564">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
+    <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618048604049">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="188" y="26" width="1117" height="825" key="CommitChangelistDialog2/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729248522" />
-    <state x="188" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1608822612564" />
-    <state x="-1708" y="110" key="DiffContextDialog" timestamp="1609054478222">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-1708" y="110" key="DiffContextDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609054478222" />
-    <state x="-1180" y="295" key="FileChooserDialogImpl" timestamp="1611035563124">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-1180" y="295" key="FileChooserDialogImpl/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611035563124" />
-    <state x="592" y="236" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1608825078322" />
-    <state x="582" y="317" key="Github.CreatePullRequestDialog" timestamp="1608727390850">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="582" y="317" key="Github.CreatePullRequestDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608727390850" />
-    <state x="525" y="270" width="522" height="203" key="Github.ShareDialog" timestamp="1608820554002">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="-1082" y="438" key="Github.ShareDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608707720144" />
-    <state x="525" y="270" width="522" height="203" key="Github.ShareDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729352581" />
-    <state x="525" y="270" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1608820554002" />
-    <state x="538" y="130" key="Github.UntrackedFilesDialog" timestamp="1608729364338">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="538" y="130" key="Github.UntrackedFilesDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729364338" />
+    <state x="-1180" y="284" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618048604049" />
+    <state x="-1180" y="295" key="FileChooserDialogImpl/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1615282737673" />
     <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1611406069662">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -501,20 +501,18 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-875" y="399" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612602518520" />
-    <state x="278" y="95" key="SettingsEditor" timestamp="1608729140021">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="278" y="95" key="SettingsEditor/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729140021" />
-    <state x="-1239" y="280" width="540" height="524" key="StructurePopup" timestamp="1609054666721">
+    <state x="-1127" y="260" key="RollbackChangesDialog" timestamp="1612685947935">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1239" y="280" width="540" height="524" key="StructurePopup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609054666721" />
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1612088331636">
+    <state x="-1127" y="260" key="RollbackChangesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612685947935" />
+    <state x="-1754" y="79" width="1309" height="905" key="SettingsEditor" timestamp="1615283638392">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612088331636" />
-    <state x="442" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608729176729" />
-    <state x="390" y="293" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608824329746" />
+    <state x="-1754" y="79" width="1309" height="905" key="SettingsEditor/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1615283638392" />
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2" timestamp="1612609443112">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -523,27 +521,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1828" y="92" width="1736" height="896" key="dock-window-1/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1609921828854" />
-    <state x="567" y="324" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608823801768">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="567" y="324" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.864@0.0.1536.864" timestamp="1608823801768" />
-    <state x="609" y="331" key="git4idea.ui.GitStashDialog" timestamp="1608824302314">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="609" y="331" key="git4idea.ui.GitStashDialog/0.0.1536.864@0.0.1536.864" timestamp="1608824302314" />
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1612608411477">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608411477" />
-    <state x="632" y="265" key="svn.repositoryBrowser" timestamp="1608727499088">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="-1130" y="331" key="svn.repositoryBrowser/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608707073523" />
-    <state x="632" y="265" key="svn.repositoryBrowser/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1608727499088" />
-    <state x="-1117" y="314" key="svn4idea.import.options" timestamp="1608706981498">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-1117" y="314" key="svn4idea.import.options/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608706981498" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <!-- Front style -->
     <link id="callCss" rel="stylesheet" href="{{url('css/front_css/front.min.css')}}" media="screen"/>
     <link href="{{url('css/front_css/base.css')}}" rel="stylesheet" media="screen"/>
     <!-- Front style responsive -->
     <link href="{{url('css/front_css/front-responsive.min.css')}}" rel="stylesheet"/>
     <link href="{{url('css/front_css/font-awesome.css')}}" rel="stylesheet" type="text/css">
+
     <!-- Google-code-prettify -->
     <link href="{{url('js/front_js/google-code-prettify/prettify.css')}}" rel="stylesheet"/>
     <!-- fav and touch icons -->
@@ -64,6 +64,7 @@
     </div>
 </div>
 @endif
+
 <div id="mainBody">
     <div class="container">
         <div class="row">
