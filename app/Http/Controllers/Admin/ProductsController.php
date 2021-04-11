@@ -24,7 +24,8 @@ class ProductsController extends Controller
         },'section'=>function($query){
             $query->select('id','name');
         }])->get();
-        $products = json_decode(json_encode($products));
+        /*$products = json_decode(json_encode($products));*/
+
         return view('admin.products.products')->with(compact('products'));
 
     }
@@ -144,11 +145,7 @@ class ProductsController extends Controller
             $product->product_color=$data['product_color'];
             $product->product_price=$data['product_price'];
             $product->product_discount=$data['product_discount'];
-
             $product->product_weight=$data['product_weight'];
-
-
-
             $product->description=$data['description'];
             $product->wash_care=$data['wash_care'];
             $product->fabric=$data['fabric'];
@@ -162,8 +159,10 @@ class ProductsController extends Controller
             $product->status=1;
             if (!empty($data['is_featured'])) {
                 $product->is_featured = $data['is_featured'];
+            }else{
+                $product->is_featured = 'No';
             }
-            $product->is_featured = 'No';
+
             $product->save();
             session::flash('success_message',$message);
             return redirect('admin/products');
