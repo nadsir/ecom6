@@ -9,6 +9,7 @@ use App\Product;
 use App\ProductsAttribute;
 use App\ProductsImage;
 use App\Brand;
+use App\Banner;
 
 class DatabaseSeeder extends Seeder
 {
@@ -65,13 +66,20 @@ class DatabaseSeeder extends Seeder
         ];
         ProductsImage::insert($productImageRecords);*/
 
-        $brandRecords = [
+/*        $brandRecords = [
             ['id' => 1, 'name' => 'Arrow', 'status' =>1],
             ['id' => 2, 'name' => 'Gap', 'status' =>1],
             ['id' => 3, 'name' => 'Lee', 'status' =>1],
             ['id' => 4, 'name' => 'Monte Carlo', 'status' =>1],
             ['id' => 5, 'name' => 'Peter England', 'status' =>1],
         ];
-        Brand::insert($brandRecords);
+        Brand::insert($brandRecords);*/
+        $bannerRecords = [
+            ['id' => 1, 'image' => 'banner1.png', 'link' => '' ,'title' => 'Black Jacket' , 'alt' =>'Black Jacket', 'status'=>'1' ],
+            ['id' => 2, 'image' => 'banner2.png', 'link' => '' ,'title' => 'Half Sleeve T-Shirt' , 'alt' =>'Half Sleeve T-Shirt', 'status'=>'1' ],
+            ['id' => 3, 'image' => 'banner3.png', 'link' => '' ,'title' => 'Full Sleeve T-Shirt' , 'alt' =>'Full Sleeve T-Shirt', 'status'=>'1' ],
+
+        ];
+        Banner::insert($bannerRecords);
     }
 }

@@ -16,8 +16,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 66&#10;we get chunk product variable form controller and&#10;make featured product dynamic with two foreach lop for showing chunk variable">
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 67&#10;we made our latest product from DB in controller and send it to blade file for showing latest product&#10;&#10;now we have latest product and feature product and left side bar menu">
+      <change afterPath="$PROJECT_DIR$/app/Banner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_12_102732_create_banner_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/banner_images/banner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/banner_images/banner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/banner_images/banner3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/hmgoepprod-24326.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/hmgoepprod-24326.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/hmgoepprod-24326.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,12 +167,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lQbvKtisuUIqnr5de7tIKQQ8So" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -256,7 +268,7 @@
       <workItem from="1617524792741" duration="151000" />
       <workItem from="1618046770484" duration="1822000" />
       <workItem from="1618121289838" duration="9670000" />
-      <workItem from="1618204018407" duration="7899000" />
+      <workItem from="1618204018407" duration="10712000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -420,7 +432,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۲۷" />
       <updated>1618209318303</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL‎۰۰۰۲۸" summary="lesson 67&#10;we made our latest product from DB in controller and send it to blade file for showing latest product&#10;&#10;now we have latest product and feature product and left side bar menu">
+      <created>1618213322455</created>
+      <option name="number" value="LOCAL‎۰۰۰۲۸" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۲۸" />
+      <updated>1618213322455</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +469,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 31&#10;add route for products&#10;create products view and sent data to view form contrller&#10;make Active and inactive button with ajax&#10;delete product form product panel with sweet alert &#10;add product to admin sidebar panel" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="lesson 32&#10;make relation between product with section and category with model&#10;use subquery for adding special column for reduce query data" />
     <MESSAGE value="lesson 33&#10;create route and function in controller and blade file for add and editing products &#10;and make arrays for adding filter option in product controller &#10;in add edit product function" />
     <MESSAGE value="lesson 34&#10;add category and subcategories for adding product &#10;complete the add product page" />
@@ -476,7 +494,8 @@
     <MESSAGE value="lesson 63&#10;we made left side bar menu from our landing page like top menu" />
     <MESSAGE value="lesson 64&#10;in 64 episod we have live stream of the project&#10;lesson 65&#10;we make array for slide show in top of or page with the chunk function&#10;we tick the featured item for product and select all of them with chunk function and sent them to the blade" />
     <MESSAGE value="lesson 66&#10;we get chunk product variable form controller and&#10;make featured product dynamic with two foreach lop for showing chunk variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 66&#10;we get chunk product variable form controller and&#10;make featured product dynamic with two foreach lop for showing chunk variable" />
+    <MESSAGE value="lesson 67&#10;we made our latest product from DB in controller and send it to blade file for showing latest product&#10;&#10;now we have latest product and feature product and left side bar menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 67&#10;we made our latest product from DB in controller and send it to blade file for showing latest product&#10;&#10;now we have latest product and feature product and left side bar menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -528,10 +547,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1754" y="79" width="1309" height="905" key="SettingsEditor/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1615283638392" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618209327359">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618213342749">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618209327359" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618213342749" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
       <screen x="-1920" y="0" width="1920" height="1080" />
