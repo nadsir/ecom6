@@ -49576,7 +49576,9 @@ var app = new Vue({
     imgId: '',
     imgStatus: '',
     brandStatus: '',
-    brandId: ''
+    brandId: '',
+    bannerId: '',
+    bannerStatus: ''
   },
   methods: {
     key: function key(event) {
@@ -49783,6 +49785,28 @@ var app = new Vue({
         }
       }, function (response) {
         _this8.error = 1;
+        console.log('error');
+      });
+    },
+    changeBannersStatus: function changeBannersStatus(bannerId) {
+      var _this9 = this;
+
+      this.bannerStatus = $("#banners-" + bannerId).children("i").attr("status");
+      console.log(this.bannerStatus);
+      this.bannerId = bannerId;
+      axios.post('/admin/update-banners-status', {
+        bannerId: this.bannerId,
+        bannerStatus: this.bannerStatus
+      }).then(function (response) {
+        if (response.data.bannerStatus == 0) {
+          $("#banners-" + response.data.bannerId).children("i").attr("status", 'Inactive');
+          $("#banners-" + response.data.bannerId).children("i").attr("class", 'fas fa-toggle-off');
+        } else {
+          $("#banners-" + response.data.bannerId).children("i").attr("status", 'Active');
+          $("#banners-" + response.data.bannerId).children("i").attr("class", 'fas fa-toggle-on');
+        }
+      }, function (response) {
+        _this9.error = 1;
         console.log('error');
       });
     }

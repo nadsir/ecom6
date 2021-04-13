@@ -46,7 +46,9 @@ const app = new Vue({
         imgId:'',
         imgStatus:'',
         brandStatus:'',
-        brandId:''
+        brandId:'',
+        bannerId:'',
+        bannerStatus:''
     },
     methods: {
         key: function (event) {
@@ -221,7 +223,6 @@ const app = new Vue({
             })
         },
         changeBrandsStatus:function (brandId){
-
             this.brandStatus=$("#brands-"+brandId).children("i").attr("status");
             console.log(this.brandStatus);
             this.brandId = brandId;
@@ -233,6 +234,25 @@ const app = new Vue({
                         } else {
                             $("#brands-"+ response.data.brandId).children("i").attr("status",'Active');
                             $("#brands-"+ response.data.brandId).children("i").attr("class",'fas fa-toggle-on');
+                        }
+                    },
+                    response => {
+                        this.error = 1;
+                        console.log('error');
+                    });
+        },
+        changeBannersStatus:function (bannerId){
+            this.bannerStatus=$("#banners-"+bannerId).children("i").attr("status");
+            console.log(this.bannerStatus);
+            this.bannerId = bannerId;
+            axios.post('/admin/update-banners-status', {bannerId: this.bannerId, bannerStatus: this.bannerStatus})
+                .then(response => {
+                        if (response.data.bannerStatus == 0) {
+                            $("#banners-"+ response.data.bannerId).children("i").attr("status",'Inactive');
+                            $("#banners-"+ response.data.bannerId).children("i").attr("class",'fas fa-toggle-off');
+                        } else {
+                            $("#banners-"+ response.data.bannerId).children("i").attr("status",'Active');
+                            $("#banners-"+ response.data.bannerId).children("i").attr("class",'fas fa-toggle-on');
                         }
                     },
                     response => {

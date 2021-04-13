@@ -16,18 +16,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 67&#10;we made our latest product from DB in controller and send it to blade file for showing latest product&#10;&#10;now we have latest product and feature product and left side bar menu">
-      <change afterPath="$PROJECT_DIR$/app/Banner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_12_102732_create_banner_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/admin_images/banner_images/banner1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/admin_images/banner_images/banner2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/admin_images/banner_images/banner3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/hmgoepprod-24326.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/hmgoepprod-24326.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/hmgoepprod-24326.jpeg" afterDir="false" />
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 68&#10;we make a table for our carousel and make carousel dynamic &#10;with making banner table in our DB and filing our table with seeder">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BannersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/banners/banners.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admin_images/banner_images/banner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/adminapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/adminapp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/adminapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/adminapp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +265,8 @@
       <workItem from="1617524792741" duration="151000" />
       <workItem from="1618046770484" duration="1822000" />
       <workItem from="1618121289838" duration="9670000" />
-      <workItem from="1618204018407" duration="10712000" />
+      <workItem from="1618204018407" duration="11676000" />
+      <workItem from="1618289608966" duration="7067000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -438,7 +436,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۲۸" />
       <updated>1618213322455</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL‎۰۰۰۲۹" summary="lesson 68&#10;we make a table for our carousel and make carousel dynamic &#10;with making banner table in our DB and filing our table with seeder">
+      <created>1618224963789</created>
+      <option name="number" value="LOCAL‎۰۰۰۲۹" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۲۹" />
+      <updated>1618224963790</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +474,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 32&#10;make relation between product with section and category with model&#10;use subquery for adding special column for reduce query data" />
     <MESSAGE value="lesson 33&#10;create route and function in controller and blade file for add and editing products &#10;and make arrays for adding filter option in product controller &#10;in add edit product function" />
     <MESSAGE value="lesson 34&#10;add category and subcategories for adding product &#10;complete the add product page" />
     <MESSAGE value="lesson 35&#10;version 34 have mistake&#10;add category and subcategories for adding product &#10;complete the add product page" />
@@ -495,7 +498,8 @@
     <MESSAGE value="lesson 64&#10;in 64 episod we have live stream of the project&#10;lesson 65&#10;we make array for slide show in top of or page with the chunk function&#10;we tick the featured item for product and select all of them with chunk function and sent them to the blade" />
     <MESSAGE value="lesson 66&#10;we get chunk product variable form controller and&#10;make featured product dynamic with two foreach lop for showing chunk variable" />
     <MESSAGE value="lesson 67&#10;we made our latest product from DB in controller and send it to blade file for showing latest product&#10;&#10;now we have latest product and feature product and left side bar menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 67&#10;we made our latest product from DB in controller and send it to blade file for showing latest product&#10;&#10;now we have latest product and feature product and left side bar menu" />
+    <MESSAGE value="lesson 68&#10;we make a table for our carousel and make carousel dynamic &#10;with making banner table in our DB and filing our table with seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 68&#10;we make a table for our carousel and make carousel dynamic &#10;with making banner table in our DB and filing our table with seeder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -510,9 +514,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1186" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608361365" />
-    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612612775242">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618294306526">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618048604049">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -535,9 +540,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611406069662" />
-    <state x="-875" y="399" key="NewPhpFileDialog" timestamp="1612602518520">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="-875" y="384" key="NewPhpFileDialog" timestamp="1618291759530">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-875" y="384" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618291759530" />
     <state x="-875" y="399" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612602518520" />
     <state x="-1127" y="260" key="RollbackChangesDialog" timestamp="1612685947935">
       <screen x="-1920" y="0" width="1920" height="1080" />
@@ -547,10 +553,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1754" y="79" width="1309" height="905" key="SettingsEditor/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1615283638392" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618213342749">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618225529272">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618213342749" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618225529272" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
       <screen x="-1920" y="0" width="1920" height="1080" />
@@ -564,9 +570,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="240" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618207240640" />
-    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1612608411477">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1618295316176">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618295316176" />
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608411477" />
   </component>
   <component name="XDebuggerManager">

@@ -63,6 +63,10 @@ Route::prefix('/admin')->namespace('Admin')->group(function (){
         Route::match(['get','post'],'add-edit-brand/{id?}','BrandContorller@addEditBrand');
         Route::get('delete-brand/{id}','BrandContorller@deleteBrand');
 
+        Route::get('banners','BannersController@banners');
+        Route::post('update-banners-status','BannersController@updateBannersStatus');
+        Route::get('delete-banner/{id}','BannersController@deleteBanner');
+
     });
 
 });
