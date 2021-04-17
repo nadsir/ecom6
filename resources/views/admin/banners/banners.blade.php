@@ -26,7 +26,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">Banners</h3>
-                                <a href="{{url('admin/add-edit-brand')}}" style="max-width: 150px;float: right" class="btn btn-block btn-success">Add Banner</a>
+                                <a href="{{url('admin/add-edit-banner')}}" style="max-width: 150px;float: right" class="btn btn-block btn-success">Add Banner</a>
                             </div>
 
                         </div>
@@ -61,7 +61,7 @@
                                             <td>{{$banner['title']}}</td>
                                             <td>{{$banner['alt']}}</td>
                                             <td>
-                                                <a title="Edit Brand" href={{url('admin/add-edit-brand/'.$banner['id'])}}><i class="fas fa-edit"></i></a>
+                                                <a title="Edit Brand" href={{url('admin/add-edit-banner/'.$banner['id'])}}><i class="fas fa-edit"></i></a>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <a title="Delete banner" v-on:click="confirmDelete({{$banner['id']}},'banner')" class="confirmDelete"
                                                    name="banners" href="javascript:void (0)" ><i class="fas fa-trash"></i></a>
