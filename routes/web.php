@@ -75,5 +75,8 @@ Route::prefix('/admin')->namespace('Admin')->group(function (){
 Route::get('/test','TestController@showMenu');
 
 Route::namespace('Front')->group(function (){
+//    Homepage Route
     Route::get('/','IndexController@index');
+// listing Route
+    Route::get('/{url}','ProductsController@listing');
 });
