@@ -16,14 +16,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 71&#10;we make dynamic slider in landing page and &#10;give information from db and control with&#10;admin panel">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/banners/home_page_banners.blade.php" afterDir="false" />
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ...">
+      <change afterPath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home_page_banners.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +274,8 @@
       <workItem from="1618640499474" duration="360000" />
       <workItem from="1618642376148" duration="543000" />
       <workItem from="1618642989660" duration="12862000" />
-      <workItem from="1618723012885" duration="7176000" />
+      <workItem from="1618723012885" duration="9043000" />
+      <workItem from="1618809199888" duration="7787000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -470,7 +469,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۳۲" />
       <updated>1618728005492</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL‎۰۰۰۳۳" summary="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ...">
+      <created>1618739059463</created>
+      <option name="number" value="LOCAL‎۰۰۰۳۳" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۳۳" />
+      <updated>1618739059463</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +507,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 36&#10;control post and get request to add products&#10;validation for adding products&#10;add product to product table" />
     <MESSAGE value="lesson 38&#10;upload images for product in three size small medium and large&#10;upload video for product" />
     <MESSAGE value="lesson 39&#10;show image in product page&#10;make dummy image for product without pic" />
     <MESSAGE value="lesson 41&#10;Update product content and image and update DB" />
@@ -527,7 +531,8 @@
     <MESSAGE value="lesson 69&#10;we make controller for our banner and make status dynamic with ajax and make delete key for delete our banner and delete image at the same way from our server" />
     <MESSAGE value="lesson 70&#10;we make banners add page and edit and delete page work well also" />
     <MESSAGE value="lesson 71&#10;we make dynamic slider in landing page and &#10;give information from db and control with&#10;admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 71&#10;we make dynamic slider in landing page and &#10;give information from db and control with&#10;admin panel" />
+    <MESSAGE value="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -547,10 +552,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1690" y="114" key="CommitChangelistDialog2" timestamp="1618728030027">
+    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2" timestamp="1618813284368">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1690" y="114" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618728030027" />
+    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618813284368" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -572,10 +577,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611406069662" />
-    <state x="-875" y="384" key="NewPhpFileDialog" timestamp="1618725635181">
+    <state x="-875" y="384" key="NewPhpFileDialog" timestamp="1618815571164">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-875" y="384" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618725635181" />
+    <state x="-875" y="384" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618815571164" />
     <state x="-875" y="399" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612602518520" />
     <state x="-1127" y="260" key="RollbackChangesDialog" timestamp="1612685947935">
       <screen x="-1920" y="0" width="1920" height="1080" />
@@ -590,10 +595,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618728009154">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618739061370">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618728009154" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618739061370" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
       <screen x="-1920" y="0" width="1920" height="1080" />

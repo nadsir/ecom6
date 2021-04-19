@@ -17,18 +17,18 @@ class Category extends Model
         return $this->belongsTo('App\Category','parent_id')->select('id','category_name');
     }
     //we use static because we use only in controller
-    public static function categoryDetails($url){
-        $categoryDetails=Category::select('id','category_name','url')->with(['subcategories'=>function($query){
+    public static function catDetails($url){
+        $catDetails=Category::select('id','category_name','url')->with(['subcategories'=>function($query){
             $query->select('id','parent_id')->where('status',1);
 
         }])->where('url',$url)->first()->toArray();
 
         $catIds=array();
-        $catIds[]=$categoryDetails['id'];
-        foreach ($categoryDetails['subcategories'] as $key=>$subcat){
+        $catIds[]=$catDetails['id'];
+        foreach ($catDetails['subcategories'] as $key=>$subcat){
             $catIds[]=$subcat['id'];
         }
-        return array('catIds'=>$catIds,'categoryDetails'=>$categoryDetails);
+        return array('catIds'=>$catIds,'catDetails'=>$catDetails);
     }
 
 }
