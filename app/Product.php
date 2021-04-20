@@ -18,5 +18,7 @@ class Product extends Model
     public function images(){
         return $this->hasMany(ProductsImage::class);
     }
-
+    public function brand(){
+        return $this->belongsTo('App\Brand','brand_id');
+    }
 }

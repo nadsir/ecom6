@@ -16,12 +16,24 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ...">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" afterDir="false" />
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 74&#10;in this chapter we make products page related to the url field&#10;of category table in db and depend on category and subcategory &#10;that define in category table and show all products that exist&#10;in category and subcategory">
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/category_images/141.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/category_images/15823.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/category_images/68528.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/6411212_preview-29800.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/6411212_preview-78320.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/blue-white-stripe-classic-fit-non-iron-shirt-with-white-collar-and-cuffs-double-cuff-2027blw-88045.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/6411212_preview-29800.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/6411212_preview-78320.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/blue-white-stripe-classic-fit-non-iron-shirt-with-white-collar-and-cuffs-double-cuff-2027blw-88045.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/6411212_preview-29800.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/6411212_preview-78320.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/blue-white-stripe-classic-fit-non-iron-shirt-with-white-collar-and-cuffs-double-cuff-2027blw-88045.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +287,8 @@
       <workItem from="1618642376148" duration="543000" />
       <workItem from="1618642989660" duration="12862000" />
       <workItem from="1618723012885" duration="9043000" />
-      <workItem from="1618809199888" duration="7787000" />
+      <workItem from="1618809199888" duration="9470000" />
+      <workItem from="1618894238451" duration="4832000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -475,7 +488,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۳۳" />
       <updated>1618739059463</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL‎۰۰۰۳۴" summary="lesson 74&#10;in this chapter we make products page related to the url field&#10;of category table in db and depend on category and subcategory &#10;that define in category table and show all products that exist&#10;in category and subcategory">
+      <created>1618819482826</created>
+      <option name="number" value="LOCAL‎۰۰۰۳۴" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۳۴" />
+      <updated>1618819482826</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 38&#10;upload images for product in three size small medium and large&#10;upload video for product" />
     <MESSAGE value="lesson 39&#10;show image in product page&#10;make dummy image for product without pic" />
     <MESSAGE value="lesson 41&#10;Update product content and image and update DB" />
     <MESSAGE value="lesson 42&#10;show image and video related to the product &#10;and delete by your order from folder and DB and show sweetalert for &#10;accept your delete action" />
@@ -532,7 +550,8 @@
     <MESSAGE value="lesson 70&#10;we make banners add page and edit and delete page work well also" />
     <MESSAGE value="lesson 71&#10;we make dynamic slider in landing page and &#10;give information from db and control with&#10;admin panel" />
     <MESSAGE value="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ..." />
+    <MESSAGE value="lesson 74&#10;in this chapter we make products page related to the url field&#10;of category table in db and depend on category and subcategory &#10;that define in category table and show all products that exist&#10;in category and subcategory" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 74&#10;in this chapter we make products page related to the url field&#10;of category table in db and depend on category and subcategory &#10;that define in category table and show all products that exist&#10;in category and subcategory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -552,10 +571,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2" timestamp="1618813284368">
+    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2" timestamp="1618894413196">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618813284368" />
+    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618894413196" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -595,10 +614,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618739061370">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618820784261">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618739061370" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618820784261" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
       <screen x="-1920" y="0" width="1920" height="1080" />
@@ -608,10 +627,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="240" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618207240640" />
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1618729999648">
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1618895146226">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618729999648" />
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618895146226" />
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608411477" />
   </component>
   <component name="XDebuggerManager">
