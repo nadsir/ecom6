@@ -34,7 +34,13 @@
                 @foreach($categoryProducts as $product)
                 <div class="row">
                     <div class="span2">
-                        <?php $product_image_path = 'images/admin_images/product_images/small/'.$product['main_image']; ?>
+                        @if(isset($product['main_image']))
+                            <?php $product_image_path = 'images/admin_images/product_images/small/'.$product['main_image']; ?>
+                        @else
+                            <?php $product_image_path = ''; ?>
+                            @endif
+
+
                         @if(!empty($product['main_image']) && file_exists($product_image_path))
                             <img src="{{asset($product_image_path)}}" alt="">
                         @else
@@ -100,15 +106,8 @@
         </div>
         <a href="compair.html" class="btn btn-large pull-right">Compare Product</a>
         <div class="pagination">
-            <ul>
-                <li><a href="#">&lsaquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">...</a></li>
-                <li><a href="#">&rsaquo;</a></li>
-            </ul>
+            {{$categoryProducts->links()}}
+     {{--       {{ $categoryProducts->appends(['sort' => 'price-lowest'])->links() }}--}}
         </div>
         <br class="clr"/>
     </div>

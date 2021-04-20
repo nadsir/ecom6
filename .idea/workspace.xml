@@ -16,11 +16,25 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="">
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 76 was online solving problem &#10;&#10;lesson 77 make listing view of product because we have to kind of view that we can&#10;switch betwwen to them and making correct routes for the front head and side bar&#10;because we end routing system for our products">
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/10093625_r-21635.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/500048-3755386-87330.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/51BmljgMDbL-32715.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/9087-11170.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/large/gs3834b_pinkstripe_formalshirt-doubletwo_front-50502.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/10093625_r-21635.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/500048-3755386-87330.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/51BmljgMDbL-32715.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/9087-11170.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/medium/gs3834b_pinkstripe_formalshirt-doubletwo_front-50502.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/10093625_r-21635.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/500048-3755386-87330.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/51BmljgMDbL-32715.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/9087-11170.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/admin_images/product_images/small/gs3834b_pinkstripe_formalshirt-doubletwo_front-50502.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,18 +194,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\traning\ecom\project\resources\js\components\LandingPage" />
-      <recent name="D:\traning\ecom\project\public\css" />
-      <recent name="C:\xampp\htdocs\ecom6\public\images\admin_images\product_images\small" />
-      <recent name="C:\xampp\htdocs\ecom6\app\Http\Controllers\Admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\traning\ecom\project\resources\js\components" />
       <recent name="D:\traning\ecom\project" />
       <recent name="C:\xampp\htdocs\ecom6\app" />
       <recent name="C:\xampp\htdocs\ecom6\public\js" />
       <recent name="C:\xampp\htdocs\ecom6\public\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\traning\ecom\project\resources\js\components\LandingPage" />
+      <recent name="D:\traning\ecom\project\public\css" />
+      <recent name="C:\xampp\htdocs\ecom6\public\images\admin_images\product_images\small" />
+      <recent name="C:\xampp\htdocs\ecom6\app\Http\Controllers\Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -275,7 +289,7 @@
       <workItem from="1618642989660" duration="12862000" />
       <workItem from="1618723012885" duration="9043000" />
       <workItem from="1618809199888" duration="9470000" />
-      <workItem from="1618894238451" duration="7315000" />
+      <workItem from="1618894238451" duration="10007000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -487,7 +501,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۳۵" />
       <updated>1618900474244</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL‎۰۰۰۳۶" summary="lesson 76 was online solving problem &#10;&#10;lesson 77 make listing view of product because we have to kind of view that we can&#10;switch betwwen to them and making correct routes for the front head and side bar&#10;because we end routing system for our products">
+      <created>1618903648331</created>
+      <option name="number" value="LOCAL‎۰۰۰۳۶" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۳۶" />
+      <updated>1618903648331</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +539,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 41&#10;Update product content and image and update DB" />
     <MESSAGE value="lesson 42&#10;show image and video related to the product &#10;and delete by your order from folder and DB and show sweetalert for &#10;accept your delete action" />
     <MESSAGE value="lesson 43&#10;make product-attribute-table for differentiate between products that hvae&#10;different attribute same size price and stock and ...&#10;make migration and model and seeder for adding data" />
     <MESSAGE value="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue" />
@@ -544,7 +563,8 @@
     <MESSAGE value="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ..." />
     <MESSAGE value="lesson 74&#10;in this chapter we make products page related to the url field&#10;of category table in db and depend on category and subcategory &#10;that define in category table and show all products that exist&#10;in category and subcategory" />
     <MESSAGE value="lesson 75&#10;we add brand to the listing page of products and description and products count&#10;and we manage top help for customer to select favorite category and navigate &#10;customer in the right direction" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 75&#10;we add brand to the listing page of products and description and products count&#10;and we manage top help for customer to select favorite category and navigate &#10;customer in the right direction" />
+    <MESSAGE value="lesson 76 was online solving problem &#10;&#10;lesson 77 make listing view of product because we have to kind of view that we can&#10;switch betwwen to them and making correct routes for the front head and side bar&#10;because we end routing system for our products" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 76 was online solving problem &#10;&#10;lesson 77 make listing view of product because we have to kind of view that we can&#10;switch betwwen to them and making correct routes for the front head and side bar&#10;because we end routing system for our products" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -564,10 +584,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2" timestamp="1618900471089">
+    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2" timestamp="1618905290056">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618900471089" />
+    <state x="-1690" y="114" width="1538" height="926" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618905290056" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -607,10 +627,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618900485916">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618903653841">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618900485916" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618903653841" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
       <screen x="-1920" y="0" width="1920" height="1080" />
