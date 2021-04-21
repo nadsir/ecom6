@@ -17,7 +17,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/frontapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/frontapp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +279,7 @@
       <workItem from="1618809199888" duration="9470000" />
       <workItem from="1618894238451" duration="24867000" />
       <workItem from="1618981443554" duration="88000" />
-      <workItem from="1618987719056" duration="4083000" />
+      <workItem from="1618987719056" duration="11995000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -504,7 +509,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۳۸" />
       <updated>1618991170999</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL‎۰۰۰۳۹" summary="lesson 80.81&#10;is talking about how we can upload file to server &#10;and buy host and domain and config filezila">
+      <created>1618992134649</created>
+      <option name="number" value="LOCAL‎۰۰۰۳۹" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۳۹" />
+      <updated>1618992134649</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 43&#10;make product-attribute-table for differentiate between products that hvae&#10;different attribute same size price and stock and ...&#10;make migration and model and seeder for adding data" />
     <MESSAGE value="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue" />
     <MESSAGE value="lesson 46&#10;adding attributes to table with adding session message for error and adding &#10;attributes for adding array to database we used the foreach loop" />
     <MESSAGE value="lesson 47&#10;show product attribute in attribute page we made preparations for admin &#10;that can not add same product size and sku for for the one Product" />
@@ -561,7 +571,8 @@
     <MESSAGE value="lesson 75&#10;we add brand to the listing page of products and description and products count&#10;and we manage top help for customer to select favorite category and navigate &#10;customer in the right direction" />
     <MESSAGE value="lesson 76 was online solving problem &#10;&#10;lesson 77 make listing view of product because we have to kind of view that we can&#10;switch betwwen to them and making correct routes for the front head and side bar&#10;because we end routing system for our products" />
     <MESSAGE value="lesson 79&#10;we worked on product page and we make sort on top of product page&#10;in depend on alphabetic and price and latest with jquary and pagenation of the &#10;laravel and appends its very important lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 79&#10;we worked on product page and we make sort on top of product page&#10;in depend on alphabetic and price and latest with jquary and pagenation of the &#10;laravel and appends its very important lesson" />
+    <MESSAGE value="lesson 80.81&#10;is talking about how we can upload file to server &#10;and buy host and domain and config filezila" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 80.81&#10;is talking about how we can upload file to server &#10;and buy host and domain and config filezila" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -581,10 +592,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1658" y="173" width="1538" height="847" key="CommitChangelistDialog2" timestamp="1618991168208">
+    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1618992133834">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1658" y="173" width="1538" height="847" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618991168208" />
+    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618992133834" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -606,10 +617,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611406069662" />
-    <state x="-875" y="384" key="NewPhpFileDialog" timestamp="1618815571164">
+    <state x="-875" y="384" key="NewPhpFileDialog" timestamp="1618993040595">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-875" y="384" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618815571164" />
+    <state x="-875" y="384" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618993040595" />
     <state x="-875" y="399" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612602518520" />
     <state x="-1127" y="260" key="RollbackChangesDialog" timestamp="1612685947935">
       <screen x="-1920" y="0" width="1920" height="1080" />
@@ -624,11 +635,15 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618991176900">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618992141635">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618991176900" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618992141635" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
+    <state x="-1354" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618997340717">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1354" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618997340717" />
     <state x="-1143" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611471420583">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -637,10 +652,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="240" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618207240640" />
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1618902396211">
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1619000830918">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618902396211" />
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619000830918" />
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608411477" />
   </component>
 </project>

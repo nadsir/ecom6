@@ -48,7 +48,7 @@
 <script src="{{url('js/front_js/front.min.js')}}" type="text/javascript"></script>
 <script src="{{url('js/front_js/google-code-prettify/prettify.js')}}"></script>
 <script src="{{ url('js/frontapp.js')}}"></script>
-<script src="{{ url('js/frontJquary.js')}}"></script>
+{{--<script src="{{ url('js/frontJquary.js')}}"></script>--}}
 <script src="{{url('js/front_js/front.js')}}"></script>
 <script src="{{url('js/front_js/jquery.lightbox-0.5.js')}}"></script>
 

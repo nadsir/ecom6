@@ -78,5 +78,5 @@ Route::namespace('Front')->group(function (){
 //    Homepage Route
     Route::get('/','IndexController@index');
 // listing Route
-    Route::get('/{url}','ProductsController@listing');
+    Route::match(['get','post'],'/{url}','ProductsController@listing');
 });

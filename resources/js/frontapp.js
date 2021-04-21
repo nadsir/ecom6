@@ -30,17 +30,31 @@ window.Vue = require('vue');
 const app = new Vue({
     el: '#frontapp',
     data: {
-        chosen:"" ,
+        sort:'',
+        url:'',
+        options:[
 
-
+            {text : 'Latest Products', value : 'product_latest'},
+            {text : 'Product name A - Z', value : 'product_name_a_z'},
+            {text : 'Product name Z - A', value : 'product_name_z_a'},
+            {text : 'Lowest Price First', value : 'product_lowest'},
+            {text : 'Highest Price', value : 'product_highest'},
+        ]
     },
     methods: {
 
-        onChangeSection:function () {
+        pickSortValue:function () {
+          /*  var sort=$(this).val();*/
+            this.url=$("#url").val();
+            axios.post('/url', {sort: this.sort, url: this.url })
+                .then(response => {
+                    $('.filter_products').html(data)
 
-                window.location.href = 'http://127.0.0.1:8000'+window.location.pathname+'?sort='+this.chosen;
-
-
+                    },
+                    response => {
+                        this.error = 1;
+                        console.log('error');
+                    });
         }
     },
 });
