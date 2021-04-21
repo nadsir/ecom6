@@ -24,6 +24,7 @@
     <style type="text/css" id="enject"></style>
 </head>
 <body>
+<div id="frontapp">
 @include('layouts.front_layout.front_header')
 <!-- Header End====================================================================== -->
 @include('front.banners.home_page_banners');
@@ -38,6 +39,7 @@
         </div>
     </div>
 </div>
+</div>
 <!-- Footer ================================================================== -->
 @include('layouts.front_layout.front_footer')
 
@@ -45,7 +47,8 @@
 <script src="{{url('js/front_js/jquery.js')}}" type="text/javascript"></script>
 <script src="{{url('js/front_js/front.min.js')}}" type="text/javascript"></script>
 <script src="{{url('js/front_js/google-code-prettify/prettify.js')}}"></script>
-
+<script src="{{ url('js/frontapp.js')}}"></script>
+<script src="{{ url('js/frontJquary.js')}}"></script>
 <script src="{{url('js/front_js/front.js')}}"></script>
 <script src="{{url('js/front_js/jquery.lightbox-0.5.js')}}"></script>
 

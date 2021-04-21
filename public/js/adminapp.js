@@ -49809,7 +49809,8 @@ var app = new Vue({
         _this9.error = 1;
         console.log('error');
       });
-    }
+    },
+    someHandler: function someHandler() {}
   }
 }); //confirm delete of record
 

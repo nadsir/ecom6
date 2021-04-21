@@ -3,5 +3,7 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/test.css": "/css/test.css",
+    "/js/frontJquary.js": "/js/frontJquary.js",
+    "/js/frontapp.js": "/js/frontapp.js",
     "/js/test.js": "/js/test.js"
 }

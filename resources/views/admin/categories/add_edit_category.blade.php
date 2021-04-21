@@ -64,9 +64,7 @@
                                                value="{{$categorydata['category_name']}}"
                                                @else
                                                value="{{old('category_name')}}"
-                                            @endif
-
-                                        >
+                                            @endif>
                                     </div>
                                     <div id="appendCategoriesLevel">
                                         @include('admin.categories.append_categories_level')
@@ -77,7 +75,6 @@
                                         <label>Select Section</label>
                                         <select name="section_id" id="section_id" class="form-control select2"
                                                 style="width: 100%;" v-on:change="onChangeSection">
-                                            <option selected="selected">Select</option>
                                             @foreach ($getSections as $getSection )
                                                 <option value="{{$getSection->id}}"
                                                         @if(!empty($categorydata['section_id']) && $categorydata['section_id']==$getSection->id)

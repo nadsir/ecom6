@@ -260,6 +260,10 @@ const app = new Vue({
                         console.log('error');
                     });
         },
+        someHandler:function () {
+
+
+        }
     },
 
 
