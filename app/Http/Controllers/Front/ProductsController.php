@@ -56,7 +56,15 @@ class ProductsController extends Controller
                     ->whereIn('category_id', $categoryDetails['catIds'])->where('status', 1);
 
                 $categoryProducts = $categoryProducts->paginate(6);
-                return view('front.products.listing')->with(compact('categoryDetails', 'categoryProducts','url'));
+                $productFilters=Product::productsFilter();
+                $fabricArray=$productFilters['fabricArray'];
+                $sleeveArray=$productFilters['sleeveArray'];
+                $patternArray=$productFilters['patternArray'];
+                $fitArray=$productFilters['fitArray'];
+                $occasionArray=$productFilters['occasionArray'];
+                $page_name="listing";
+                return view('front.products.listing')->with(compact('categoryDetails', 'categoryProducts'
+                    ,'url','fabricArray','sleeveArray','patternArray','fitArray','occasionArray','page_name'));
 
             } else {
                 abort(404);
