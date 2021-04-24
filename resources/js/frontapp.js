@@ -48,7 +48,8 @@ const app = new Vue({
             this.url=$("#url").val();
             axios.post('/url', {sort: this.sort, url: this.url })
                 .then(response => {
-                    $('.filter_products').html(data)
+
+                    $('.filter_products').html(response.data);
 
                     },
                     response => {

@@ -16,13 +16,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" afterDir="false" />
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 82&#10;we worked in filter and we want to implement sort that we build in previous viedeo&#10;in ajax mode and we make ajax without refreshing page for sorting and filtering the&#10;products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/frontapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/frontapp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +276,8 @@
       <workItem from="1618809199888" duration="9470000" />
       <workItem from="1618894238451" duration="24867000" />
       <workItem from="1618981443554" duration="88000" />
-      <workItem from="1618987719056" duration="11995000" />
+      <workItem from="1618987719056" duration="12395000" />
+      <workItem from="1619240605659" duration="4664000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -515,7 +513,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۳۹" />
       <updated>1618992134649</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL‎۰۰۰۴۰" summary="lesson 82&#10;we worked in filter and we want to implement sort that we build in previous viedeo&#10;in ajax mode and we make ajax without refreshing page for sorting and filtering the&#10;products">
+      <created>1619001399572</created>
+      <option name="number" value="LOCAL‎۰۰۰۴۰" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۴۰" />
+      <updated>1619001399572</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +551,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 44&#10;add attributes by jquery code form multiple adding to the attribute&#10;product table and making view for this issue" />
     <MESSAGE value="lesson 46&#10;adding attributes to table with adding session message for error and adding &#10;attributes for adding array to database we used the foreach loop" />
     <MESSAGE value="lesson 47&#10;show product attribute in attribute page we made preparations for admin &#10;that can not add same product size and sku for for the one Product" />
     <MESSAGE value="lesson 49&#10;we add Active Inactive button for product status and add delete button for deleting &#10;attributes by ajax and sweet alert that we make in last video" />
@@ -572,7 +575,8 @@
     <MESSAGE value="lesson 76 was online solving problem &#10;&#10;lesson 77 make listing view of product because we have to kind of view that we can&#10;switch betwwen to them and making correct routes for the front head and side bar&#10;because we end routing system for our products" />
     <MESSAGE value="lesson 79&#10;we worked on product page and we make sort on top of product page&#10;in depend on alphabetic and price and latest with jquary and pagenation of the &#10;laravel and appends its very important lesson" />
     <MESSAGE value="lesson 80.81&#10;is talking about how we can upload file to server &#10;and buy host and domain and config filezila" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 80.81&#10;is talking about how we can upload file to server &#10;and buy host and domain and config filezila" />
+    <MESSAGE value="lesson 82&#10;we worked in filter and we want to implement sort that we build in previous viedeo&#10;in ajax mode and we make ajax without refreshing page for sorting and filtering the&#10;products" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 82&#10;we worked in filter and we want to implement sort that we build in previous viedeo&#10;in ajax mode and we make ajax without refreshing page for sorting and filtering the&#10;products" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -592,10 +596,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1618992133834">
+    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619241593151">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618992133834" />
+    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619241593151" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -635,10 +639,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1618992141635">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619001400890">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618992141635" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619001400890" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1354" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618997340717">
       <screen x="-1920" y="0" width="1920" height="1040" />
