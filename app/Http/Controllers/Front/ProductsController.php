@@ -13,6 +13,7 @@ class ProductsController extends Controller
     {
         if ($request->ajax()){
             $data=$request->all();
+            /*dd($data);*/
             $url=$data['url'];
 
             $categoryCount = Category::where(['url' => $url, 'status' => 1])->count();
@@ -20,6 +21,23 @@ class ProductsController extends Controller
                 $categoryDetails = Category::catDetails($url);
                 $categoryProducts = Product::with('brand')
                     ->whereIn('category_id', $categoryDetails['catIds'])->where('status', 1);
+                //If Fabric filter is selected
+                if (isset($data['fabric']) && !empty($data['fabric'])) {
+                    $categoryProducts->whereIn('products.fabric',$data['fabric']);
+                }
+                if (isset($data['sleeve']) && !empty($data['sleeve'])) {
+                    $categoryProducts->whereIn('products.sleeve',$data['sleeve']);
+                }
+                if (isset($data['pattern']) && !empty($data['pattern'])) {
+                    $categoryProducts->whereIn('products.pattern',$data['pattern']);
+                }
+                if (isset($data['fit']) && !empty($data['fit'])) {
+                    $categoryProducts->whereIn('products.fit',$data['fit']);
+                }
+                if (isset($data['occasion']) && !empty($data['occasion'])) {
+                    $categoryProducts->whereIn('products.occasion',$data['occasion']);
+                }
+
                 //if sort selected by user
                 if (isset($data['sort']) && !empty($data['sort'])) {
                     if ($data['sort'] == "product_latest") {
@@ -40,7 +58,7 @@ class ProductsController extends Controller
                         $categoryProducts->orderBy('id', 'Desc');
                     }
                 }
-                $categoryProducts = $categoryProducts->paginate(6);
+                $categoryProducts = $categoryProducts->paginate(60);
 
                 return view('front.products.ajax_products_listing')->with(compact('categoryDetails', 'categoryProducts','url'));
 

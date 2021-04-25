@@ -17,7 +17,7 @@
             <input type="hidden"  name="url" id="url"  value="{{$url}}" >
             <div class="control-group">
                 <label class="control-label alignL">Sort By </label>
-                <select {{--id="sort" name="sort"--}} v-on:change="pickSortValue" v-model="sort">
+                <select {{--id="sort" name="sort"--}}  v-model="sort">
                     <option value="">select</option>
                     <option v-for="option in options" v-bind:value="option.value">
                         @{{option.text}}

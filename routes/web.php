@@ -79,4 +79,5 @@ Route::namespace('Front')->group(function (){
     Route::get('/','IndexController@index');
 // listing Route
     Route::match(['get','post'],'/{url}','ProductsController@listing');
+
 });

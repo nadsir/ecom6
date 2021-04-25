@@ -149,8 +149,8 @@ class ProductsController extends Controller
             $product->description=$data['description'];
             $product->wash_care=$data['wash_care'];
             $product->fabric=$data['fabric'];
-            $product->pattern=$data['sleeve'];
-            $product->sleeve=$data['category_id'];
+            $product->pattern=$data['pattern'];
+            $product->sleeve=$data['sleeve'];
             $product->fit=$data['fit'];
             $product->occasion=$data['occasion'];
             $product->meta_title=$data['meta_title'];

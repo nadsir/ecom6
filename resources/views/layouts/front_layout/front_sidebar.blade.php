@@ -25,38 +25,39 @@ $sections = Section::sections();
     </ul>
     <br>
     @if(isset($page_name) && $page_name=="listing")
-        <div class="well well-small">
+        <div class="well well-small" >
             <h5>Fabric</h5>
             @foreach($fabricArray as $fabric)
-                <input style="margin-top: 5px" type="checkbox" name="fabric[]" id="{{$fabric}}" value="{{$fabric}}">
+                <input class="fabric" v-model="fabrics"  style="margin-top: 5px" type="checkbox" name="fabric[]"
+                       id="{{$fabric}}" value="{{$fabric}}" {{--@change="fabrics"--}}>
                 &nbsp;&nbsp;{{$fabric}}<br>
             @endforeach
         </div>
         <div class="well well-small">
             <h5>Sleeve</h5>
             @foreach($sleeveArray as $sleeve)
-                <input style="margin-top: 5px" type="checkbox" name="sleeve[]" id="{{$sleeve}}" value="{{$sleeve}}">
+                <input class="sleeve" v-model="sleeves" style="margin-top: 5px" type="checkbox" name="sleeve[]" id="{{$sleeve}}" v value="{{$sleeve}}" {{--@change="sleeve"--}}>
                 &nbsp;&nbsp;{{$sleeve}}<br>
             @endforeach
         </div>
         <div class="well well-small">
             <h5>Pattern</h5>
             @foreach($patternArray as $pattern)
-                <input style="margin-top: 5px" type="checkbox" name="pattern[]" id="{{$pattern}}" value="{{$pattern}}">
+                <input class="pattern" v-model="patterns" style="margin-top: 5px" type="checkbox" name="pattern[]" id="{{$pattern}}"   value="{{$pattern}}">
                 &nbsp;&nbsp;{{$pattern}}<br>
             @endforeach
         </div>
         <div class="well well-small">
             <h5>Fit</h5>
             @foreach($fitArray as $fit)
-                <input style="margin-top: 5px" type="checkbox" name="fit[]" id="{{$fit}}" value="{{$fit}}">
+                <input class="fit" v-model="fits" style="margin-top: 5px" type="checkbox" name="fit[]" id="{{$fit}}"   value="{{$fit}}">
                 &nbsp;&nbsp;{{$fit}}<br>
             @endforeach
         </div>
         <div class="well well-small">
             <h5>Occasion</h5>
             @foreach($occasionArray as $occasion)
-                <input style="margin-top: 5px" type="checkbox" name="occasion[]" id="{{$occasion}}" value="{{$occasion}}">
+                <input  class="occasion" v-model="occasions" style="margin-top: 5px" type="checkbox" name="occasion[]" id="{{$occasion}}"   value="{{$occasion}}">
                 &nbsp;&nbsp;{{$occasion}}<br>
             @endforeach
         </div>

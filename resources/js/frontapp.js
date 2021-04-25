@@ -29,35 +29,72 @@ window.Vue = require('vue');
 
 const app = new Vue({
     el: '#frontapp',
-    data: {
-        sort:'',
-        url:'',
-        options:[
+    data() {
+        return {
+            fabrics: [],
+            sleeves: [],
+            patterns: [],
+            fits: [],
+            occasions:[],
+            sort: '',
+            url: '',
+            options: [
+                {text: 'Latest Products', value: 'product_latest'},
+                {text: 'Product name A - Z', value: 'product_name_a_z'},
+                {text: 'Product name Z - A', value: 'product_name_z_a'},
+                {text: 'Lowest Price First', value: 'product_lowest'},
+                {text: 'Highest Price', value: 'product_highest'},
+            ],
 
-            {text : 'Latest Products', value : 'product_latest'},
-            {text : 'Product name A - Z', value : 'product_name_a_z'},
-            {text : 'Product name Z - A', value : 'product_name_z_a'},
-            {text : 'Lowest Price First', value : 'product_lowest'},
-            {text : 'Highest Price', value : 'product_highest'},
-        ]
+
+        }
     },
     methods: {
 
-        pickSortValue:function () {
-          /*  var sort=$(this).val();*/
-            this.url=$("#url").val();
-            axios.post('/url', {sort: this.sort, url: this.url })
+        callToWatch: function () {
+            this.url = $("#url").val();
+            axios.post('/url', {
+                sort: this.sort,
+                url: this.url,
+                fabric: this.fabrics,
+                sleeve: this.sleeves,
+                pattern: this.patterns,
+                fit:this.fits,
+                occasion:this.occasions,
+            })
                 .then(response => {
-
-                    $('.filter_products').html(response.data);
-
+                        $('.filter_products').html(response.data);
                     },
                     response => {
                         this.error = 1;
                         console.log('error');
                     });
         }
+
     },
+    watch: {
+        'sort': function () {
+            this.callToWatch();
+        },
+        'fabrics': function () {
+            this.callToWatch();
+        },
+        'sleeves': function () {
+            this.callToWatch();
+        },
+        'patterns': function () {
+            this.callToWatch();
+        },
+        'fits':function () {
+            this.callToWatch();
+        },
+        'occasions':function () {
+            this.callToWatch();
+        }
+
+
+    },
+
 });
 
 //confirm delete of record
