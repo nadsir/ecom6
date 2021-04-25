@@ -16,17 +16,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 84&#10;in this lesson we define filter in global mode in products model&#10;and we use in view in adding products and products page for &#10;filtering with ajax this is the important lesson">
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/frontJquary.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/frontJquary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/frontJquary.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/frontJquary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/frontapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/frontapp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +279,7 @@
       <workItem from="1618981443554" duration="88000" />
       <workItem from="1618987719056" duration="12395000" />
       <workItem from="1619240605659" duration="25078000" />
-      <workItem from="1619326586877" duration="5615000" />
+      <workItem from="1619326586877" duration="12045000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -540,7 +533,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۴۲" />
       <updated>1619247828604</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL‎۰۰۰۴۳" summary="lesson 85.86&#10;we complete filtering for the product in this lesson with ajax and vuejs&#10;in this video we work with jquery but i use vuejs for filtering Product&#10;but the resualt is same">
+      <created>1619332370133</created>
+      <option name="number" value="LOCAL‎۰۰۰۴۳" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۴۳" />
+      <updated>1619332370133</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +571,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 49&#10;we add Active Inactive button for product status and add delete button for deleting &#10;attributes by ajax and sweet alert that we make in last video" />
     <MESSAGE value="lesson 50&#10;we make multiple images for our product we make migration model and seeder&#10;for make this table" />
     <MESSAGE value="lesson 52&#10;we insert multiple photo for product with success message and we can use active inactive for image and we can delete product with messages" />
     <MESSAGE value="lesson 53&#10;make brand migration and model and seeder for brand table in database" />
@@ -597,7 +595,8 @@
     <MESSAGE value="lesson 82&#10;we worked in filter and we want to implement sort that we build in previous viedeo&#10;in ajax mode and we make ajax without refreshing page for sorting and filtering the&#10;products" />
     <MESSAGE value="lesson 83&#10;we complete ajax in sorting products" />
     <MESSAGE value="lesson 84&#10;in this lesson we define filter in global mode in products model&#10;and we use in view in adding products and products page for &#10;filtering with ajax this is the important lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 84&#10;in this lesson we define filter in global mode in products model&#10;and we use in view in adding products and products page for &#10;filtering with ajax this is the important lesson" />
+    <MESSAGE value="lesson 85.86&#10;we complete filtering for the product in this lesson with ajax and vuejs&#10;in this video we work with jquery but i use vuejs for filtering Product&#10;but the resualt is same" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 85.86&#10;we complete filtering for the product in this lesson with ajax and vuejs&#10;in this video we work with jquery but i use vuejs for filtering Product&#10;but the resualt is same" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -617,10 +616,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619247849876">
+    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619332367600">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619247849876" />
+    <state x="-1546" y="229" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619332367600" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -660,10 +659,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619247830173">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619332372116">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619247830173" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619332372116" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1354" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618997340717">
       <screen x="-1920" y="0" width="1920" height="1040" />

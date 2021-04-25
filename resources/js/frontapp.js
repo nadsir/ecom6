@@ -45,15 +45,13 @@ const app = new Vue({
                 {text: 'Lowest Price First', value: 'product_lowest'},
                 {text: 'Highest Price', value: 'product_highest'},
             ],
-
-
         }
     },
     methods: {
 
         callToWatch: function () {
             this.url = $("#url").val();
-            axios.post('/url', {
+            axios.post(this.url, {
                 sort: this.sort,
                 url: this.url,
                 fabric: this.fabrics,
@@ -70,7 +68,6 @@ const app = new Vue({
                         console.log('error');
                     });
         }
-
     },
     watch: {
         'sort': function () {
