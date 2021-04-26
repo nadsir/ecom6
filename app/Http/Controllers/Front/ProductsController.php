@@ -59,7 +59,7 @@ class ProductsController extends Controller
                         $categoryProducts->orderBy('id', 'Desc');
                     }
                 }
-                $categoryProducts = $categoryProducts->paginate(3);
+                $categoryProducts = $categoryProducts->paginate(30);
 
                 return view('front.products.ajax_products_listing')->with(compact('categoryDetails', 'categoryProducts','url'));
 
@@ -75,7 +75,7 @@ class ProductsController extends Controller
                 $categoryProducts = Product::with('brand')
                     ->whereIn('category_id', $categoryDetails['catIds'])->where('status', 1);
 
-                $categoryProducts = $categoryProducts->paginate(3);
+                $categoryProducts = $categoryProducts->paginate(30);
                 $productFilters=Product::productsFilter();
                 $fabricArray=$productFilters['fabricArray'];
                 $sleeveArray=$productFilters['sleeveArray'];
@@ -91,6 +91,10 @@ class ProductsController extends Controller
             }
         }
 
+        }
+
+        public function detail($code,$id){
+        return view('front.products.detail');
         }
     }
 
