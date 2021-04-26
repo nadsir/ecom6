@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Front;
+
 use App\ProductsAttribute;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Route;
@@ -15,9 +16,9 @@ class ProductsController extends Controller
     public function listing(Request $request)
     {
         Paginator::useBootstrap();
-        if ($request->ajax()){
-            $data=$request->all();
-            $url=$data['url'];
+        if ($request->ajax()) {
+            $data = $request->all();
+            $url = $data['url'];
 
             $categoryCount = Category::where(['url' => $url, 'status' => 1])->count();
             if ($categoryCount > 0) {
@@ -26,19 +27,19 @@ class ProductsController extends Controller
                     ->whereIn('category_id', $categoryDetails['catIds'])->where('status', 1);
                 //If Fabric filter is selected
                 if (isset($data['fabric']) && !empty($data['fabric'])) {
-                    $categoryProducts->whereIn('products.fabric',$data['fabric']);
+                    $categoryProducts->whereIn('products.fabric', $data['fabric']);
                 }
                 if (isset($data['sleeve']) && !empty($data['sleeve'])) {
-                    $categoryProducts->whereIn('products.sleeve',$data['sleeve']);
+                    $categoryProducts->whereIn('products.sleeve', $data['sleeve']);
                 }
                 if (isset($data['pattern']) && !empty($data['pattern'])) {
-                    $categoryProducts->whereIn('products.pattern',$data['pattern']);
+                    $categoryProducts->whereIn('products.pattern', $data['pattern']);
                 }
                 if (isset($data['fit']) && !empty($data['fit'])) {
-                    $categoryProducts->whereIn('products.fit',$data['fit']);
+                    $categoryProducts->whereIn('products.fit', $data['fit']);
                 }
                 if (isset($data['occasion']) && !empty($data['occasion'])) {
-                    $categoryProducts->whereIn('products.occasion',$data['occasion']);
+                    $categoryProducts->whereIn('products.occasion', $data['occasion']);
                 }
 
                 //if sort selected by user
@@ -47,30 +48,25 @@ class ProductsController extends Controller
                         $categoryProducts->orderBy('id', 'Desc');
                     } else if ($data['sort'] == "product_name_a_z") {
                         $categoryProducts->orderBy('product_name', 'Asc');
-                    }
-                    else if ($data['sort'] == "product_name_z_a") {
+                    } else if ($data['sort'] == "product_name_z_a") {
                         $categoryProducts->orderBy('product_name', 'Desc');
-                    }
-                    else if ($data['sort'] == "product_lowest") {
+                    } else if ($data['sort'] == "product_lowest") {
                         $categoryProducts->orderBy('product_price', 'Asc');
-                    }
-                    else if ($data['sort'] == "product_highest") {
+                    } else if ($data['sort'] == "product_highest") {
                         $categoryProducts->orderBy('product_price', 'Desc');
-                    }
-                    else {
+                    } else {
                         $categoryProducts->orderBy('id', 'Desc');
                     }
                 }
                 $categoryProducts = $categoryProducts->paginate(30);
 
-                return view('front.products.ajax_products_listing')->with(compact('categoryDetails', 'categoryProducts','url'));
+                return view('front.products.ajax_products_listing')->with(compact('categoryDetails', 'categoryProducts', 'url'));
 
             } else {
                 abort(404);
             }
-        }
-        else{
-            $url=Route::getFacadeRoot()->current()->uri();
+        } else {
+            $url = Route::getFacadeRoot()->current()->uri();
             $categoryCount = Category::where(['url' => $url, 'status' => 1])->count();
             if ($categoryCount > 0) {
                 $categoryDetails = Category::catDetails($url);
@@ -78,27 +74,34 @@ class ProductsController extends Controller
                     ->whereIn('category_id', $categoryDetails['catIds'])->where('status', 1);
 
                 $categoryProducts = $categoryProducts->paginate(30);
-                $productFilters=Product::productsFilter();
-                $fabricArray=$productFilters['fabricArray'];
-                $sleeveArray=$productFilters['sleeveArray'];
-                $patternArray=$productFilters['patternArray'];
-                $fitArray=$productFilters['fitArray'];
-                $occasionArray=$productFilters['occasionArray'];
-                $page_name="listing";
+                $productFilters = Product::productsFilter();
+                $fabricArray = $productFilters['fabricArray'];
+                $sleeveArray = $productFilters['sleeveArray'];
+                $patternArray = $productFilters['patternArray'];
+                $fitArray = $productFilters['fitArray'];
+                $occasionArray = $productFilters['occasionArray'];
+                $page_name = "listing";
                 return view('front.products.listing')->with(compact('categoryDetails', 'categoryProducts'
-                    ,'url','fabricArray','sleeveArray','patternArray','fitArray','occasionArray','page_name'));
+                    , 'url', 'fabricArray', 'sleeveArray', 'patternArray', 'fitArray', 'occasionArray', 'page_name'));
 
             } else {
                 abort(404);
             }
         }
 
-        }
-
-        public function detail($id){
-        $productDetails=Product::with('category','brand','attributes','images')->find($id)->toArray();
-        $total_stock=ProductsAttribute::where('product_id',$id)->sum('stock');
-        return view('front.products.detail')->with(compact('productDetails','total_stock'));
-        }
     }
+
+    public function detail($id)
+    {
+        $productDetails = Product::with('category', 'brand', 'attributes', 'images')->find($id)->toArray();
+        $total_stock = ProductsAttribute::where('product_id', $id)->sum('stock');
+        return view('front.products.detail')->with(compact('productDetails', 'total_stock'));
+    }
+
+    public function getProductPrice(Request $request){
+        $data=$request->all();
+        $getProductPrice=ProductsAttribute::where(['product_id'=>$data['id'],'size'=>$data['size']])->first();
+        return $getProductPrice->price;
+    }
+}
 

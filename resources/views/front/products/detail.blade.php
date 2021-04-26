@@ -44,10 +44,10 @@
                 <hr class="soft"/>
                 <small>{{$total_stock}} items in stock</small>
                 <form class="form-horizontal qtyFrm">
-                    <div class="control-group">
-                        <h4>Rs.{{$productDetails['product_price']}} </h4>
-                        <select class="span2 pull-left">
-                            <option>Select Size</option>
+                    <div class="control-group" >
+                        <h4 class="getAttrPrice">Rs.{{$productDetails['product_price']}} </h4>
+                        <select class="span2 pull-left" v-model="selectSize" @change="sendId('{{$productDetails['id']}}')">
+                            <option value="">Select Size</option>
                             @foreach($productDetails['attributes'] as $attibute)
                                 <option>{{$attibute['size']}}</option>
                             @endforeach

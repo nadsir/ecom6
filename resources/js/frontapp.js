@@ -45,6 +45,8 @@ const app = new Vue({
                 {text: 'Lowest Price First', value: 'product_lowest'},
                 {text: 'Highest Price', value: 'product_highest'},
             ],
+            selectSize:'',
+            newPrice:''
         }
     },
     methods: {
@@ -62,6 +64,20 @@ const app = new Vue({
             })
                 .then(response => {
                         $('.filter_products').html(response.data);
+                    },
+                    response => {
+                        this.error = 1;
+                        console.log('error');
+                    });
+        },
+        sendId:function (id) {
+
+            axios.post('/get-product-price', {
+                id: id,
+                size: this.selectSize,
+            })
+                .then(response => {
+                       $(".getAttrPrice").html("Rs. "+response.data+"");
                     },
                     response => {
                         this.error = 1;
@@ -87,7 +103,8 @@ const app = new Vue({
         },
         'occasions':function () {
             this.callToWatch();
-        }
+        },
+
 
 
     },

@@ -85,4 +85,5 @@ Route::namespace('Front')->group(function (){
     }
     //Product detail route
     Route::get('/product/{id}','ProductsController@detail');
+    Route::post('get-product-price','ProductsController@getProductPrice');
 });
