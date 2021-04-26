@@ -326,7 +326,9 @@ class ProductsController extends Controller
                 return redirect()->back();
             }
         }
-        $productdata=Product::with('images')->select('id','product_name','product_code','product_color','main_image')->first($id);
+
+        $productdata=Product::with('images')->select('id','product_name','product_code','product_color','main_image')->find($id);
+
         $title="Product Images";
         return view('admin.products.add_images')->with(compact('productdata','title'));
 
