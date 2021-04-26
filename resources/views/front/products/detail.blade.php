@@ -8,34 +8,18 @@
         </ul>
         <div class="row">
             <div id="gallery" class="span3">
-                <a href="themes/images/products/large/f1.jpg" title="Blue Casual T-Shirt">
-                    <img src="{{asset('images/admin_images/product_images/large/6411212_preview-29800.png')}}"
+                <a href="{{asset('images/admin_images/product_images/large/'.$productDetails['main_image'])}}" title="Blue Casual T-Shirt">
+                    <img src="{{asset('images/admin_images/product_images/large/'.$productDetails['main_image'])}}"
                          style="width:100%" alt="Blue Casual T-Shirt"/>
                 </a>
                 <div id="differentview" class="moreOptopm carousel slide">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <a href="themes/images/products/large/f1.jpg"> <img style="width:29%"
-                                                                                src="{{asset('images/admin_images/product_images/large/6411212_preview-29800.png')}}"
-                                                                                alt=""/></a>
-                            <a href="themes/images/products/large/f2.jpg"> <img style="width:29%"
-                                                                                src="{{asset('images/admin_images/product_images/large/6411212_preview-29800.png')}}"
-                                                                                alt=""/></a>
-                            <a href="themes/images/products/large/f3.jpg"> <img style="width:29%"
-                                                                                src="{{asset('images/admin_images/product_images/large/6411212_preview-29800.png')}}"
-                                                                                alt=""/></a>
+                            @foreach($productDetails['images'] as $image)
+                            <a href="{{asset('images/admin_images/product_images/large/'.$image['image'])}}"><img style="width:29%" src="{{asset('images/admin_images/product_images/large/'.$image['image'])}}" alt=""/></a>
+                            @endforeach
                         </div>
-                        <div class="item">
-                            <a href="themes/images/products/large/f3.jpg"> <img style="width:29%"
-                                                                                src="{{asset('images/admin_images/product_images/large/6411212_preview-29800.png')}}"
-                                                                                alt=""/></a>
-                            <a href="themes/images/products/large/f1.jpg"> <img style="width:29%"
-                                                                                src="{{asset('images/admin_images/product_images/large/6411212_preview-29800.png')}}"
-                                                                                alt=""/></a>
-                            <a href="themes/images/products/large/f2.jpg"> <img style="width:29%"
-                                                                                src="{{asset('images/admin_images/product_images/large/6411212_preview-29800.png')}}"
-                                                                                alt=""/></a>
-                        </div>
+
                     </div>
                     <!--
                                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
@@ -58,7 +42,7 @@
                 <h3>{{$productDetails['product_name']}} </h3>
                 <small>{{$productDetails['brand']['name']}}</small>
                 <hr class="soft"/>
-                <small>100 items in stock</small>
+                <small>{{$total_stock}} items in stock</small>
                 <form class="form-horizontal qtyFrm">
                     <div class="control-group">
                         <h4>Rs.{{$productDetails['product_price']}} </h4>

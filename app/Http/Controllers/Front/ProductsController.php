@@ -1,12 +1,14 @@
 <?php
 
 namespace App\Http\Controllers\Front;
+use App\ProductsAttribute;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Route;
 use App\Category;
 use App\Http\Controllers\Controller;
 use App\Product;
 use Illuminate\Http\Request;
+
 
 class ProductsController extends Controller
 {
@@ -95,8 +97,8 @@ class ProductsController extends Controller
 
         public function detail($id){
         $productDetails=Product::with('category','brand','attributes','images')->find($id)->toArray();
-
-        return view('front.products.detail')->with(compact('productDetails'));
+        $total_stock=ProductsAttribute::where('product_id',$id)->sum('stock');
+        return view('front.products.detail')->with(compact('productDetails','total_stock'));
         }
     }
 
