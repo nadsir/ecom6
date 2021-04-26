@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Front;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Route;
 use App\Category;
 use App\Http\Controllers\Controller;
@@ -11,6 +12,7 @@ class ProductsController extends Controller
 {
     public function listing(Request $request)
     {
+        Paginator::useBootstrap();
         if ($request->ajax()){
             $data=$request->all();
             $url=$data['url'];
@@ -57,7 +59,7 @@ class ProductsController extends Controller
                         $categoryProducts->orderBy('id', 'Desc');
                     }
                 }
-                $categoryProducts = $categoryProducts->paginate(60);
+                $categoryProducts = $categoryProducts->paginate(3);
 
                 return view('front.products.ajax_products_listing')->with(compact('categoryDetails', 'categoryProducts','url'));
 
@@ -73,7 +75,7 @@ class ProductsController extends Controller
                 $categoryProducts = Product::with('brand')
                     ->whereIn('category_id', $categoryDetails['catIds'])->where('status', 1);
 
-                $categoryProducts = $categoryProducts->paginate(6);
+                $categoryProducts = $categoryProducts->paginate(3);
                 $productFilters=Product::productsFilter();
                 $fabricArray=$productFilters['fabricArray'];
                 $sleeveArray=$productFilters['sleeveArray'];
