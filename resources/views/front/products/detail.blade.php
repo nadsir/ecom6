@@ -45,6 +45,22 @@
                 </div>
             </div>
             <div class="span6">
+                @if(Session::has('success_message'))
+                    <div class="alert alert-success alert-dismissible " role="alert">
+                        <strong>Sorry!</strong> {{Session::get('success_message')}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
+                @if(Session::has('error-message'))
+                    <div class="alert alert-danger alert-dismissible " role="alert">
+                        <strong>Sorry!</strong> {{Session::get('error-message')}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
                 <h3>{{$productDetails['product_name']}} </h3>
                 <small>{{$productDetails['brand']['name']}}</small>
                 <hr class="soft"/>

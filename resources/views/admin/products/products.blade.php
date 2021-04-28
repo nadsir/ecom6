@@ -14,10 +14,10 @@
                                 </button>
                             </div>
                         @endif
-                        @if(Session::has('flash_message_success'))
+                        @if(Session::has('error-message'))
                             <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 10px">
                                 <strong>Congeradulation</strong>
-                                <p>{{Session::get('flash_message_success')}}</p>
+                                <p>{{Session::get('error-message')}}</p>
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
