@@ -88,4 +88,5 @@ Route::namespace('Front')->group(function (){
     Route::post('get-product-price','ProductsController@getProductPrice');
     //Add to Cart Route
     Route::post('/add-to-cart','ProductsController@addtocart');
+    Route::get('/cart','ProductsController@cart');
 });

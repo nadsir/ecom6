@@ -17,10 +17,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/front/products/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/products/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/listing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,13 +284,7 @@
       <workItem from="1619240605659" duration="25078000" />
       <workItem from="1619326586877" duration="14569000" />
       <workItem from="1619413559647" duration="22609000" />
-      <workItem from="1619586670848" duration="11421000" />
-    </task>
-    <task id="LOCAL‎۰۰۰۰۳" summary="lesson 32&#10;make relation between product with section and category with model&#10;use subquery for adding special column for reduce query data">
-      <created>1609069664215</created>
-      <option name="number" value="LOCAL‎۰۰۰۰۳" />
-      <option name="presentableId" value="LOCAL‎۰۰۰۰۳" />
-      <updated>1609069664215</updated>
+      <workItem from="1619586670848" duration="13701000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۴" summary="lesson 33&#10;create route and function in controller and blade file for add and editing products &#10;and make arrays for adding filter option in product controller &#10;in add edit product function">
       <created>1609072904192</created>
@@ -577,7 +574,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۵۱" />
       <updated>1619595024626</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL‎۰۰۰۵۲" summary="lesson 96&#10;we check out attribute for product if the size exist &#10;we show in product size we must check out from db&#10;after that check quantity if we have this quantity &#10;we show success message and else we show error&#10;after that we add this item  to he cart for now &#10;we make session for user but in future we can &#10;login user and add user id">
+      <created>1619598831541</created>
+      <option name="number" value="LOCAL‎۰۰۰۵۲" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۵۲" />
+      <updated>1619598831541</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +612,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 64&#10;in 64 episod we have live stream of the project&#10;lesson 65&#10;we make array for slide show in top of or page with the chunk function&#10;we tick the featured item for product and select all of them with chunk function and sent them to the blade" />
     <MESSAGE value="lesson 66&#10;we get chunk product variable form controller and&#10;make featured product dynamic with two foreach lop for showing chunk variable" />
     <MESSAGE value="lesson 67&#10;we made our latest product from DB in controller and send it to blade file for showing latest product&#10;&#10;now we have latest product and feature product and left side bar menu" />
     <MESSAGE value="lesson 68&#10;we make a table for our carousel and make carousel dynamic &#10;with making banner table in our DB and filing our table with seeder" />
@@ -634,7 +636,8 @@
     <MESSAGE value="lesson 92&#10;we show diffrent price for the diffrent size of products with ajax in&#10;product details page" />
     <MESSAGE value="lesson 93&#10;we create related product and detail product in productDetails page&#10;and we create concept of category help in front of productDetails" />
     <MESSAGE value="lesson 94&#10;is the webinar for the laravel 6 to 8 &#10;lesson 95&#10;explane guide line of add to cart &#10;make migration an d model and table for the add to cart&#10;make route for the add to cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 94&#10;is the webinar for the laravel 6 to 8 &#10;lesson 95&#10;explane guide line of add to cart &#10;make migration an d model and table for the add to cart&#10;make route for the add to cart" />
+    <MESSAGE value="lesson 96&#10;we check out attribute for product if the size exist &#10;we show in product size we must check out from db&#10;after that check quantity if we have this quantity &#10;we show success message and else we show error&#10;after that we add this item  to he cart for now &#10;we make session for user but in future we can &#10;login user and add user id" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 96&#10;we check out attribute for product if the size exist &#10;we show in product size we must check out from db&#10;after that check quantity if we have this quantity &#10;we show success message and else we show error&#10;after that we add this item  to he cart for now &#10;we make session for user but in future we can &#10;login user and add user id" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -654,10 +657,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619595023446">
+    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619598830473">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619595023446" />
+    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619598830473" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -679,10 +682,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611406069662" />
-    <state x="-875" y="384" key="NewPhpFileDialog" timestamp="1619416856951">
+    <state x="-875" y="384" key="NewPhpFileDialog" timestamp="1619599785157">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-875" y="384" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619416856951" />
+    <state x="-875" y="384" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619599785157" />
     <state x="-875" y="399" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612602518520" />
     <state x="-1127" y="260" key="RollbackChangesDialog" timestamp="1612685947935">
       <screen x="-1920" y="0" width="1920" height="1080" />
@@ -697,10 +700,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619595026316">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619598834132">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619595026316" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619598834132" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1354" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618997340717">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -715,10 +718,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="240" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618207240640" />
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1619596217787">
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1619600182190">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619596217787" />
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619600182190" />
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608411477" />
   </component>
 </project>

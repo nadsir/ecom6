@@ -1,5 +1,5 @@
 
-@extends('layouts.front_layout.front_layout');
+@extends('layouts.front_layout.front_layout')
 @section('content')
 {{--    <?php dd($_GET['sort']); ?>--}}
     <div class="span9">

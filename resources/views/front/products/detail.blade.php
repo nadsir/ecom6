@@ -1,4 +1,4 @@
-@extends('layouts.front_layout.front_layout');
+@extends('layouts.front_layout.front_layout')
 @section('content')
     <div class="span9">
         <ul class="breadcrumb">

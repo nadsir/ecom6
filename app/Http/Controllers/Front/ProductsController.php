@@ -11,7 +11,7 @@ use App\Http\Controllers\Controller;
 use App\Product;
 use Illuminate\Http\Request;
 use Session;
-
+use Auth;
 
 class ProductsController extends Controller
 {
@@ -135,8 +135,14 @@ class ProductsController extends Controller
                 $session_id=Session::getId();
                 Session::put('session_id',$session_id);
             }
-            //check product if already exist in cart
-            $countProducts=Cart::where(['product_id'=>$data['product_id'],'size'=>$data['size']])->count();
+            //check product if already exist in user cart
+            if (Auth::check()){
+                $countProducts=Cart::where(['product_id'=>$data['product_id'],'size'=>$data['size'],'user_id'=>Auth::user()->id])->count();
+            }else{
+                $countProducts=Cart::where(['product_id'=>$data['product_id'],'size'=>$data['size'],'session_id'=>Session::get('session_id')])->count();
+            }
+
+
             if ($countProducts>0){
                 $message="product already exists !";
                 session::flash('error-message',$message);
@@ -157,6 +163,10 @@ class ProductsController extends Controller
         }
 
 
+    }
+
+    public function cart(){
+        return view('front.products.cart');
     }
 }
 
