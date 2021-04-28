@@ -111,5 +111,14 @@ class ProductsController extends Controller
 
 
     }
+
+    public function addtocart(Request $request){
+        if ($request->isMethod('post')){
+            $data=$request->all();
+            dd($data);
+        }
+
+
+    }
 }
 
