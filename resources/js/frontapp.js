@@ -26,11 +26,16 @@ window.Vue = require('vue');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+import Vue from 'vue';
+import {Tabs, Tab} from 'vue-tabs-component';
+Vue.component('tabs', Tabs);
+Vue.component('tab', Tab);
+import 'vue-tabs-component/docs/resources/tabs-component.css';
 const app = new Vue({
     el: '#frontapp',
     data() {
         return {
+            activeItem: 'home',
             fabrics: [],
             sleeves: [],
             patterns: [],
@@ -83,6 +88,12 @@ const app = new Vue({
                         this.error = 1;
                         console.log('error');
                     });
+        },
+        isActive (menuItem) {
+            return this.activeItem === menuItem
+        },
+        setActive (menuItem) {
+            this.activeItem = menuItem
         }
     },
     watch: {

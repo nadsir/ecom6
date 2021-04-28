@@ -95,13 +95,21 @@ class ProductsController extends Controller
     {
         $productDetails = Product::with('category', 'brand', 'attributes', 'images')->find($id)->toArray();
         $total_stock = ProductsAttribute::where('product_id', $id)->sum('stock');
-        return view('front.products.detail')->with(compact('productDetails', 'total_stock'));
+        $relatedProducts=Product::where('category_id',$productDetails['category']['id'])->limit(3)->inRandomOrder()->where('id','!=',$id)->get()->toArray();
+        return view('front.products.detail')->with(compact('productDetails', 'total_stock','relatedProducts'));
     }
 
     public function getProductPrice(Request $request){
         $data=$request->all();
-        $getProductPrice=ProductsAttribute::where(['product_id'=>$data['id'],'size'=>$data['size']])->first();
-        return $getProductPrice->price;
+        if (!empty($data['size'])){
+            $getProductPrice=ProductsAttribute::where(['product_id'=>$data['id'],'size'=>$data['size']])->first();
+            return $getProductPrice->price;
+        }else{
+            $getProductPrice=Product::where('id',$data['id'])->first();
+            return $getProductPrice->product_price;
+        }
+
+
     }
 }
 

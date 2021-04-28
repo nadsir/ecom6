@@ -19,10 +19,12 @@
     <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/frontapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/frontapp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/products/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_layout/front_layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,18 +184,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\traning\ecom\project\resources\js\components\LandingPage" />
-      <recent name="D:\traning\ecom\project\public\css" />
-      <recent name="C:\xampp\htdocs\ecom6\public\images\admin_images\product_images\small" />
-      <recent name="C:\xampp\htdocs\ecom6\app\Http\Controllers\Admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\traning\ecom\project\resources\js\components" />
       <recent name="D:\traning\ecom\project" />
       <recent name="C:\xampp\htdocs\ecom6\app" />
       <recent name="C:\xampp\htdocs\ecom6\public\js" />
       <recent name="C:\xampp\htdocs\ecom6\public\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\traning\ecom\project\resources\js\components\LandingPage" />
+      <recent name="D:\traning\ecom\project\public\css" />
+      <recent name="C:\xampp\htdocs\ecom6\public\images\admin_images\product_images\small" />
+      <recent name="C:\xampp\htdocs\ecom6\app\Http\Controllers\Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -282,7 +284,8 @@
       <workItem from="1618987719056" duration="12395000" />
       <workItem from="1619240605659" duration="25078000" />
       <workItem from="1619326586877" duration="14569000" />
-      <workItem from="1619413559647" duration="15815000" />
+      <workItem from="1619413559647" duration="22609000" />
+      <workItem from="1619586670848" duration="5549000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۱" summary="lesson 30&#10;add product migration/add controller for product/add product model/ make seed for product&#10;and create product table in DB">
       <created>1609054100695</created>
@@ -572,7 +575,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۴۸" />
       <updated>1619426501680</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL‎۰۰۰۴۹" summary="lesson 92&#10;we show diffrent price for the diffrent size of products with ajax in&#10;product details page">
+      <created>1619432817252</created>
+      <option name="number" value="LOCAL‎۰۰۰۴۹" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۴۹" />
+      <updated>1619432817252</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +613,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 60 ,61 &#10;making front ecome index file or landing page and related css and javascript and images to this file" />
     <MESSAGE value="lesson 62&#10;we made dynamic menu from database in 3 level" />
     <MESSAGE value="lesson 63&#10;we made left side bar menu from our landing page like top menu" />
     <MESSAGE value="lesson 64&#10;in 64 episod we have live stream of the project&#10;lesson 65&#10;we make array for slide show in top of or page with the chunk function&#10;we tick the featured item for product and select all of them with chunk function and sent them to the blade" />
@@ -629,7 +637,8 @@
     <MESSAGE value="lesson 89&#10;we made detail page for our product only front end" />
     <MESSAGE value="lesson 90&#10;we sed product detail information from db to blade file&#10;and use relation in product model to carry all information&#10;about product and send it to blade and show it" />
     <MESSAGE value="lesson 91&#10;we made image dynamic for the products and made light box&#10;dynamically and count total product form attribute of Product&#10;and show in the blade file of products" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 91&#10;we made image dynamic for the products and made light box&#10;dynamically and count total product form attribute of Product&#10;and show in the blade file of products" />
+    <MESSAGE value="lesson 92&#10;we show diffrent price for the diffrent size of products with ajax in&#10;product details page" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 92&#10;we show diffrent price for the diffrent size of products with ajax in&#10;product details page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -649,10 +658,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619426500616">
+    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619432815428">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619426500616" />
+    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619432815428" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -692,10 +701,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619426507652">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619432819243">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619426507652" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619432819243" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1354" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618997340717">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -710,10 +719,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="240" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618207240640" />
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1619430963456">
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1619591646643">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619430963456" />
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619591646643" />
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608411477" />
   </component>
 </project>
