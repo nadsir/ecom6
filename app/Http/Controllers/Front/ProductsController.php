@@ -170,5 +170,6 @@ class ProductsController extends Controller
 
         return view('front.products.cart')->with(compact('userCartItems'));
     }
+
 }
 
