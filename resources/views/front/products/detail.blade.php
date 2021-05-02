@@ -170,7 +170,7 @@ use App\product;
                             @foreach($relatedProducts as $product)
                             <li class="span3" style="margin-left: 5px !important;">
                                 <div class="thumbnail">
-                                    <a href="product_details.html">
+                                    <a href="{{url('product/'.$product['id'])}}">
                                         <?php $product_image_path = 'images/admin_images/product_images/small/'.$product['main_image']; ?>
                                         @if(!empty($product['main_image']) && file_exists($product_image_path))
                                             <img src="{{asset($product_image_path)}}" alt="">

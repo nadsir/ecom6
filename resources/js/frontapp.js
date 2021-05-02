@@ -82,7 +82,13 @@ const app = new Vue({
                 size: this.selectSize,
             })
                 .then(response => {
-                       $(".getAttrPrice").html("Rs. "+response.data+"");
+
+                    if (response.data.discounted_price > 0){
+                        $(".getAttrPrice").html("<del>Rs. "+response.data.product_price+"</del> Rs. "+response.data.discounted_price );
+                    }else{
+                        $(".getAttrPrice").html("Rs. "+response.data.product_price+"");
+                    }
+
                     },
                     response => {
                         this.error = 1;

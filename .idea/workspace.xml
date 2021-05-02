@@ -16,10 +16,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="">
+    <list default="true" id="3d2b13df-0d58-4956-8938-36a02b48c273" name="Default Changelist" comment="lesson 100&#10;in this video we add discount for category and product and calculate final price&#10;and send to blade file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/ajax_products_listing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/frontapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/frontapp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/products/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/detail.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -283,13 +284,8 @@
       <workItem from="1619413559647" duration="22609000" />
       <workItem from="1619586670848" duration="14597000" />
       <workItem from="1619608895842" duration="395000" />
-      <workItem from="1619844309890" duration="10751000" />
-    </task>
-    <task id="LOCAL‎۰۰۰۰۷" summary="lesson 35&#10;version 34 have mistake&#10;add category and subcategories for adding product &#10;complete the add product page">
-      <created>1609152581158</created>
-      <option name="number" value="LOCAL‎۰۰۰۰۷" />
-      <option name="presentableId" value="LOCAL‎۰۰۰۰۷" />
-      <updated>1609152581158</updated>
+      <workItem from="1619844309890" duration="11291000" />
+      <workItem from="1619931893847" duration="6955000" />
     </task>
     <task id="LOCAL‎۰۰۰۰۸" summary="lesson 36&#10;control post and get request to add products&#10;validation for adding products&#10;add product to product table">
       <created>1609316364566</created>
@@ -579,7 +575,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۵۵" />
       <updated>1619855875678</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL‎۰۰۰۵۶" summary="lesson 100&#10;in this video we add discount for category and product and calculate final price&#10;and send to blade file">
+      <created>1619862383036</created>
+      <option name="number" value="LOCAL‎۰۰۰۵۶" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۵۶" />
+      <updated>1619862383036</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +613,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson 69&#10;we make controller for our banner and make status dynamic with ajax and make delete key for delete our banner and delete image at the same way from our server" />
     <MESSAGE value="lesson 70&#10;we make banners add page and edit and delete page work well also" />
     <MESSAGE value="lesson 71&#10;we make dynamic slider in landing page and &#10;give information from db and control with&#10;admin panel" />
     <MESSAGE value="lesson 73&#10;we make product controller for making the dynamic route depend on&#10;url column in db for navigate to the category and subcategory &#10;and ..." />
@@ -636,7 +637,8 @@
     <MESSAGE value="lesson 97&#10;we sperate session and auth user &#10;we correct url for selecting product &#10;we add cart view and make route for cart" />
     <MESSAGE value="lesson 98&#10;we complete cart model for sending correct data to the user &#10;for showing buy cart with details and elequent and add to&#10;blade file template" />
     <MESSAGE value="lesson 99&#10;in this video we work on price and calculate price and count total price&#10;for each product and all product" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 99&#10;in this video we work on price and calculate price and count total price&#10;for each product and all product" />
+    <MESSAGE value="lesson 100&#10;in this video we add discount for category and product and calculate final price&#10;and send to blade file" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 100&#10;in this video we add discount for category and product and calculate final price&#10;and send to blade file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1194" y="373" key="#Custom_Plugin_Repositories" timestamp="1615281628285">
@@ -656,10 +658,10 @@
     </state>
     <state x="-1230" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618294306526" />
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612612775242" />
-    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619855873583">
+    <state x="-1670" y="97" width="1538" height="712" key="CommitChangelistDialog2" timestamp="1619932307767">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1738" y="183" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619855873583" />
+    <state x="-1670" y="97" width="1538" height="712" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619932307767" />
     <state x="-1180" y="284" key="FileChooserDialogImpl" timestamp="1618639801170">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -699,10 +701,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1239" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618646061413" />
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619856018955">
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2" timestamp="1619862691730">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619856018955" />
+    <state x="-1494" y="198" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619862691730" />
     <state x="-1494" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612609443112" />
     <state x="-1354" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618997340717">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -717,10 +719,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="240" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1618207240640" />
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1619861871448">
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup" timestamp="1619933312919">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619861871448" />
+    <state x="-1297" y="226" width="672" height="653" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1619933312919" />
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612608411477" />
   </component>
   <component name="XDebuggerManager">
@@ -728,7 +730,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Front/ProductsController.php</url>
-          <line>149</line>
+          <line>148</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
